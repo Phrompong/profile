@@ -31,10 +31,10 @@ function App() {
               KHAGTES
 
             </div>
-            {/* <div className='information-nick-name'>{ nickName }</div> */ }
+            <div className='information-nick-name'>{ nickName }</div>
           </div>
           <div className='information-position'>Full Stack  Developer</div>
-          <p className='information-detail'>
+          <span className='information-detail'>
             5 years experience in programmer.
             The scope of work includes Software development,
             Software structure design, Database management,
@@ -44,13 +44,10 @@ function App() {
             to ensure that it is functioning properly in accordance
             with current business
             and integrate new functions into existing applications.
-          </p>
-          <div className='information-contact'>
-            Full Stack  Developer
-          </div>
+          </span>
         </div>
         <div className='information-right'>
-          {/* <img src={ profile_image } className='information-image'></img> */ }
+          <img src={ profile_image } className='information-image'></img>
         </div>
       </div>
     </div >
