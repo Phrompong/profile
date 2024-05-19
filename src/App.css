@@ -11,6 +11,7 @@ body {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -20,55 +21,91 @@ body {
   display: flex;
   justify-content: flex-end;
   color: #CED4DA;
-  font-size: 16px;
   align-items: center;
 }
 
 .header-list {
   display: flex;
   gap: 40px;
-  margin-right: 200px;
+  margin-right: 10%;
+  font-size: 1.5vw;
 }
 
 .information {
   display: grid;
-  grid-template-columns: auto 50%;
+  grid-template-columns: 50% 50%;
   background-color: #000000;
-  ;
+}
+
+.information-left {
+  display: grid;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin-left: 5vw;
+}
+
+.information-right {
+  grid-column: 2 / span 5;
 }
 
 .information-first-name {
   font-weight: 700;
-  font-size: 80px;
-  line-height: 98px;
+  font-size: 5vw;
   background: linear-gradient(to right, #FFFFFF, #6C757D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-left: 80px;
 }
 
 .information-group-last-name-nick-name {
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
+  padding: 0;
   gap: 10px;
+
 }
 
 .information-last-name {
+  display: flex;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 98px;
+  font-size: 5vw;
   background: linear-gradient(to right, #FFFFFF, #6C757D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  margin-left: 80px;
-  justify-content: start;
+  gap: 10px;
+
 }
 
 .information-nick-name {
+  display: flex;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 98px;
+  font-size: 2vw;
   background: linear-gradient(to right, #FFFFFF, #6C757D);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  align-items: center;
+
+}
+
+.information-position {
+  color: #007AFF;
+  font-weight: 700;
+  font-size: 3vw;
+  font-style: italic;
+
+}
+
+.information-detail {
+  color: #CED4DA;
+  font-weight: 400;
+  font-size: 1.5vw;
+
+}
+
+.information-image {
+  width: 50vw;
+
+}
+
+.information-contact {
+  display: flex;
+  justify-content: flex-start;
 }
