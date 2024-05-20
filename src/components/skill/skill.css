@@ -1,0 +1,78 @@
+.img-program-db {
+    width: 20%;
+}
+
+.img-framework {
+    width: 10%;
+}
+
+.skill-topic {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3vw;
+    background: linear-gradient(to right, #FFFFFF, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+.skill {
+    display: grid;
+    align-content: center;
+    align-self: center;
+    grid-template-columns: 50% 50%;
+    color: white;
+    border: 2px;
+    width: 100%;
+}
+
+.program-lang {
+    color: white;
+    /* border-style: dotted; */
+}
+
+.program-lang-title {
+    display: flex;
+    justify-content: center;
+    color: #007AFF;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.program-lang-icon {
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.database-title {
+    display: flex;
+    justify-content: center;
+    color: #007AFF;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.framework {
+    grid-column: 1 / span 2;
+    /* border-style: dotted; */
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    flex-direction: column;
+}
+
+.framework-title {
+    display: flex;
+    justify-content: center;
+    color: #007AFF;
+    align-items: center;
+    font-size: 2vw;
+}
+
+.framework-lang-icon {
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+}
