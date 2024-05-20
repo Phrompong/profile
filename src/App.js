@@ -1,5 +1,6 @@
 import './App.css';
 import profile_image from './images/profile_image.png';
+import hamburger from "./images/hamburger.png";
 
 function App() {
   const headers = [
@@ -20,6 +21,11 @@ function App() {
             < div > { o }</div>
           )) }
         </div>
+      </div>
+
+      {/* Header Mobile */ }
+      <div className='header-mobile'>
+        <img className='header-image-burger' src={ hamburger }></img>
       </div>
 
       {/* Information */ }
