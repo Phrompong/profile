@@ -1,7 +1,7 @@
 import { useState } from "react";
-import "../components/header.css";
-import hamburger from "../images/hamburger.png";
-import close from "../images/close.png";
+import "../header/header.css";
+import hamburger from "../../images/hamburger.png";
+import close from "../../images/close.png";
 
 function Header() {
     const [open, setOpen] = useState(false);
