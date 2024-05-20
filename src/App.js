@@ -1,32 +1,16 @@
 import './App.css';
 import profile_image from './images/profile_image.png';
-import hamburger from "./images/hamburger.png";
+import Header from './components/header.js';
 
 function App() {
-  const headers = [
-    "<Home>",
-    "<Skills>",
-    "<Experience>",
-    "<Contact>"
-  ]
+
   const nickName = "<CHOPPER>";
 
 
   return (
     <div className="App">
       {/* Header */ }
-      <div className='header'>
-        <div className='header-list'>
-          { headers.map((o) => (
-            < div > { o }</div>
-          )) }
-        </div>
-      </div>
-
-      {/* Header Mobile */ }
-      <div className='header-mobile'>
-        <img className='header-image-burger' src={ hamburger }></img>
-      </div>
+      <Header></Header>
 
       {/* Information */ }
       <div className='information'>
