@@ -14,6 +14,7 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
+    gap: 30px;
 }
 
 .experience-card {
@@ -73,7 +74,7 @@
 .experience-card-third {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
 }
 
 .experience-card-third-project-name {
@@ -87,7 +88,7 @@
     display: flex;
     margin-left: 1%;
     flex-direction: column;
-    gap: 20px;
+    gap: 30px;
 }
 
 .experience-card-third-project-name-detail {
