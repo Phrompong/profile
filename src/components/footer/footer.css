@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #0041BF;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+    gap: 3vw;
+}
+
+.footer-title {
+    font-weight: 700;
+    font-size: 3vw;
+    background: linear-gradient(to right, #FFFFFF, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.footer-information {
+    font-size: 1.5vw;
+    color: #FFFFFF;
+}
+
+.footer-button {
+    width: 20%;
+    cursor: pointer;
+}
+
+.footer-word-contact {
+    font-weight: 400;
+    font-size: 1vw;
+    color: #FFFFFF;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-contact-image {
+    width: 4vw;
+}
