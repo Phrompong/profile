@@ -127,6 +127,7 @@ function Experience() {
     ];
 
     return <>
+
         <div className="experience-topic">EXPERIENCE</div>
         <div className="container">
             { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
@@ -165,6 +166,42 @@ function Experience() {
 
 
         </div >
+
+        {/* Mobile */ }
+        <div className="container-mobile">
+            { details.map(({ logo, companyName, companySub, period, position, projects }, index) => {
+                return <>
+                    <div className="mobile-experience-card">
+                        <img className="mobile-experience-card-name-image" src={ logo }></img>
+                        <div className="mobile-experience-card-name-company">
+                            { companyName }
+                        </div>
+                        <div className="mobile-experience-card-name-company-second">{ companySub }</div>
+                        <div className="mobile-experience-card-period">{ period }</div>
+
+                        <div className="mobile-experience-card-second">{ position }</div>
+
+                        <div className="mobile-experience-card-third">
+                            { projects && projects.map(({ name, details }, index) => {
+                                return (
+                                    <>
+                                        <div className="mobile-experience-card-third-project-name">{ name }</div>
+                                        <div className="mobile-experience-card-third-project-group-detail">
+                                            { details.map((detail, index) => {
+                                                return <>  <li className="mobile-experience-card-third-project-name-detail">{ detail }</li></>
+                                            }) }
+                                        </div>
+                                    </>
+                                )
+                            }) }
+
+                        </div>
+                    </div>
+                </>
+            }) }
+        </div>
+
+
     </>
 }
 

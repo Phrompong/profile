@@ -16,6 +16,109 @@
     align-items: center;
 }
 
+.container-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        display: none;
+    }
+
+    .container-mobile {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .mobile-experience-card {
+        display: flex;
+        background: #212529;
+        color: white;
+        flex-direction: column;
+        padding: 1%;
+        border-radius: 16px;
+        width: 80%;
+        margin-top: 1%;
+        align-items: center;
+    }
+
+    .mobile-experience-card-name-image {
+        width: 10%;
+        object-fit: cover;
+        margin-top: 3%;
+    }
+
+    .mobile-experience-card-name-company {
+        display: flex;
+        font-size: 3vw;
+        color: #007AFF;
+        line-height: 29.26px;
+        font-weight: 700;
+    }
+
+    .mobile-experience-card-name-company-second {
+        display: flex;
+        font-size: 3vw;
+        color: #CED4DA;
+        line-height: 29.26px;
+        font-weight: 400;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .mobile-experience-card-period {
+        display: flex;
+        justify-content: flex-end;
+        color: #FFFFFF;
+        font-size: 3vw;
+    }
+
+    .mobile-experience-card-second {
+        font-size: 4vw;
+        color: #FFFFFF;
+        font-style: italic;
+        font-weight: 600;
+        line-height: 34.13px;
+        margin-top: 2%;
+    }
+
+    .mobile-experience-card-third {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+
+    .mobile-experience-card-third-project-name {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 3.5vw;
+        color: #FFFFFF;
+        font-weight: 650;
+        line-height: 20px;
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    .mobile-experience-card-third-project-group-detail {
+        display: flex;
+        margin-left: 3%;
+        flex-direction: column;
+        margin-top: 1%;
+    }
+
+    .mobile-experience-card-third-project-name-detail {
+        font-size: 3vw;
+        color: #FFFFFF;
+        font-weight: 400;
+        line-height: 24.38px;
+        margin-bottom: 1%;
+    }
+
+}
+
 .experience-card {
     display: flex;
     background: #212529;
@@ -100,4 +203,3 @@
     line-height: 24.38px;
     margin-bottom: 1%;
 }
-
