@@ -45,7 +45,7 @@
     }
 
     .mobile-experience-card-name-image {
-        width: 10%;
+        width: 10vw;
         object-fit: cover;
         margin-top: 3%;
     }

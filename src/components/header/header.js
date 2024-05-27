@@ -12,7 +12,6 @@ function Header({ informationRef, skillRef, experienceRef }) {
         "Contact"
     ];
 
-    console.log("test", skillRef)
 
     const handleClick = (o) => {
 

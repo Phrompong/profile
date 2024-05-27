@@ -55,6 +55,44 @@ function Skill({ skillRef }) {
                     </div>
                 </div>
             </div >
+
+            <div className="mobile-skill">
+                <div className="mobile-program-lang">
+                    <span className="mobile-program-lang-title">
+                        PROGRAMMING LANGUAGES
+                    </span>
+                    <div className="mobile-program-lang-icon">
+                        <img className="mobile-img-program-db" src={ iconTs }></img>
+                        <img className="mobile-img-program-db" src={ iconJs }></img>
+                        <img className="mobile-img-program-db" src={ iconCSharp }></img>
+                        <img className="mobile-img-program-db" src={ iconSql }></img>
+                        <img className="mobile-img-program-db" src={ iconPhp }></img>
+                    </div>
+                </div>
+                <div className="mobile-program-lang">
+                    <span className="mobile-database-title">
+                        DATABASE
+                    </span>
+                    <div className="mobile-program-lang-icon">
+                        <img className="mobile-img-program-db" src={ iconSqlDB }></img>
+                        <img className="mobile-img-program-db" src={ iconMySql }></img>
+                        <img className="mobile-img-program-db" src={ iconMongoDB }></img>
+                        <img className="mobile-img-program-db" src={ iconOracle }></img>
+                    </div>
+                </div>
+                <div className="mobile-framework">
+                    <div className="mobile-framework-title">
+                        FRAMEWORKS
+                    </div>
+                    <div className="mobile-framework-lang-icon">
+                        <img className="mobile-img-program-db" src={ iconAngular }></img>
+                        <img className="mobile-img-program-db" src={ iconNode }></img>
+                        <img className="mobile-img-program-db" src={ iconNest }></img>
+                        <img className="mobile-img-program-db" src={ iconReact }></img>
+                        <img className="mobile-img-program-db" src={ iconAspNet }></img>
+                    </div>
+                </div>
+            </div >
         </>
     )
 }

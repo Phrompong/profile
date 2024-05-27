@@ -27,6 +27,10 @@
     width: 100%;
 }
 
+.mobile-skill {
+    display: none;
+}
+
 .program-lang {
     color: white;
     /* border-style: dotted; */
@@ -75,4 +79,91 @@
     padding: 3%;
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 480px) {
+    .skill {
+        display: none;
+    }
+
+    .mobile-img-program-db {
+        width: 12vw;
+    }
+
+    .mobile-img-framework {
+        width: 9vw;
+    }
+
+    .mobile-skill-topic {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 3vw;
+        background: linear-gradient(to right, #FFFFFF, #6C757D);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
+    .mobile-skill {
+        display: grid;
+        align-content: center;
+        align-self: center;
+        grid-template-columns: 50% 50%;
+        color: white;
+        border: 2px;
+        width: 100%;
+    }
+
+    .mobile-program-lang {
+        color: white;
+        /* border-style: dotted; */
+    }
+
+    .mobile-program-lang-title {
+        display: flex;
+        justify-content: center;
+        color: #007AFF;
+        align-items: center;
+        font-size: 2.5vw;
+    }
+
+    .mobile-program-lang-icon {
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2vw;
+    }
+
+    .mobile-database-title {
+        display: flex;
+        justify-content: center;
+        color: #007AFF;
+        align-items: center;
+        font-size: 2.5vw;
+    }
+
+    .mobile-framework {
+        grid-column: 1 / span 2;
+        /* border-style: dotted; */
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        flex-direction: column;
+    }
+
+    .mobile-framework-title {
+        display: flex;
+        justify-content: center;
+        color: #007AFF;
+        align-items: center;
+        font-size: 2.5vw;
+    }
+
+    .mobile-framework-lang-icon {
+        padding: 3%;
+        display: flex;
+        justify-content: center;
+    }
 }

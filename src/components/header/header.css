@@ -72,10 +72,11 @@
         display: flex;
         padding: 5%;
         flex-direction: column;
+        margin-top: 10%;
     }
 
     .header-menu-image-close {
-        width: 8%;
+        width: 5vw;
         cursor: pointer;
     }
 
