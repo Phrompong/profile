@@ -4,7 +4,7 @@ import PTTLogo from "../../images/logo_PTT_experience.png";
 import FusionLogo from "../../images/logo_Fusion_experience.png";
 import CSILogo from "../../images/logo_CSI.png";
 
-function Experience() {
+function Experience({ experienceRef }) {
     const details = [
         {
             logo: TNLogo,
@@ -128,7 +128,7 @@ function Experience() {
 
     return <>
 
-        <div className="experience-topic">EXPERIENCE</div>
+        <div ref={ experienceRef } className="experience-topic">EXPERIENCE</div>
         <div className="container">
             { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
                 return (

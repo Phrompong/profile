@@ -14,10 +14,10 @@ import iconNest from "../../images/nestjs.png";
 import iconReact from "../../images/reactjs.png";
 import iconAspNet from "../../images/aspnet.png";
 
-function Skill() {
+function Skill({ skillRef }) {
     return (
         <>
-            <div className="skill-topic">SKILLS</div>
+            <div ref={ skillRef } className="skill-topic">SKILLS</div>
             <div className="skill">
                 <div className="program-lang">
                     <span className="program-lang-title">

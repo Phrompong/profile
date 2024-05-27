@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import "../header/header.css";
 import hamburger from "../../images/hamburger.png";
 import close from "../../images/close.png";
 
-function Header() {
+function Header({ skillRef, experienceRef }) {
     const [open, setOpen] = useState(false);
+
+    const ref = useRef(null);
 
     const headers = [
         "Home",
@@ -13,17 +15,29 @@ function Header() {
         "Contact"
     ];
 
+    console.log("test", skillRef)
+
+    const handleClick = (o) => {
+        switch (o) {
+            case "Skills":
+                skillRef.current?.scrollIntoView({ behavior: 'smooth' });
+                break;
+            case "Experience":
+                experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
+                break;
+        }
+    };
+
     return (
         <>
             {/* Header Desktop */ }
             <div className='header'>
                 <span className='header-list'>
                     { headers.map((o) => (
-                        < div > { o }</div>
+                        < div onClick={ () => { handleClick(o) } }> { o }</div>
                     )) }
                 </span>
             </div>
-
             {/* Header Mobile */ }
             <div className='header-mobile'>
                 <img
@@ -40,7 +54,7 @@ function Header() {
                             src={ close }></img>
                         <div className="header-menu-list">
                             { headers.map((o) => (
-                                <a> { o }</a>
+                                <a onClick={ () => { handleClick(o) } }> { o }</a>
                             )) }
                         </div>
                     </div>
