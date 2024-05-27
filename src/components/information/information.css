@@ -71,6 +71,19 @@
         margin-left: 20px;
         margin-right: 20px;
     }
+
+    .information-mobile-contact {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2vw;
+        gap: 1vw;
+        justify-content: center;
+    }
+
+    .information-mobile-contact-image {
+        width: 8vw;
+        cursor: pointer;
+    }
 }
 
 
@@ -147,6 +160,18 @@
     font-weight: 400;
     font-size: 1.5vw;
 
+}
+
+.information-contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vw;
+    gap: 1vw;
+    object-fit: cover;
+}
+
+.information-contact-image {
+    width: 5vw;
 }
 
 .information-image {

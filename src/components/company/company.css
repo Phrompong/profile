@@ -9,12 +9,12 @@
 }
 
 .company-image {
-    width: 13%;
+    width: 15vw;
     height: 100%;
     object-fit: cover;
 }
 
 .company-vertical-line {
     border-left: 1px solid #6C757D;
-    height: 5vw;
+    height: 6vw;
 }

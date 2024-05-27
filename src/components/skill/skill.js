@@ -47,11 +47,11 @@ function Skill({ skillRef }) {
                         FRAMEWORKS
                     </div>
                     <div className="framework-lang-icon">
-                        <img className="img-framework" src={ iconAngular }></img>
-                        <img className="img-framework" src={ iconNode }></img>
-                        <img className="img-framework" src={ iconNest }></img>
-                        <img className="img-framework" src={ iconReact }></img>
-                        <img className="img-framework" src={ iconAspNet }></img>
+                        <img className="img-program-db" src={ iconAngular }></img>
+                        <img className="img-program-db" src={ iconNode }></img>
+                        <img className="img-program-db" src={ iconNest }></img>
+                        <img className="img-program-db" src={ iconReact }></img>
+                        <img className="img-program-db" src={ iconAspNet }></img>
                     </div>
                 </div>
             </div >

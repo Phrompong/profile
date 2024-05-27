@@ -14,10 +14,18 @@ function Footer() {
 
             <div className="footer-word-contact">or contact me</div>
             <div className="footer-contact">
-                <img className="footer-contact-image" src={ contact_tel } ></img>
-                <img className="footer-contact-image" src={ contact_mail } ></img>
-                <img className="footer-contact-image" src={ contact_line } ></img>
-                <img className="footer-contact-image" src={ contact_linkIn } ></img>
+                <a href="tel:0952535792">
+                    <img src={ contact_tel } alt="tel" className="footer-contact-image" />
+                </a>
+                <a href="mailto:someone@example.com">
+                    <img src={ contact_mail } alt="mail" className="footer-contact-image" />
+                </a>
+                <a href="https://line.me/ti/p/R12teBUknT">
+                    <img src={ contact_line } alt="line" className="footer-contact-image" />
+                </a>
+                <a href="https://www.linkedin.com/in/phrompong-khagtes-115957188">
+                    <img src={ contact_linkIn } alt="linkIn" className="footer-contact-image" />
+                </a>
             </div>
         </div >
     </>
