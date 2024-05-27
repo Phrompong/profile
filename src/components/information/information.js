@@ -1,11 +1,12 @@
 import "../information/information.css";
 import profile_image from '../../images/profile_image.png';
 
-function Information() {
+function Information({ informationRef }) {
     const nickName = "<CHOPPER>";
 
     return <>
-        <div className='information'>
+        {/* <div ref={ informationRef } ></div> */ }
+        <div ref={ informationRef } className='information'>
             <div className='information-left'>
                 <div className='information-first-name'>PHROMPONG</div>
                 <div className='information-group-last-name-nick-name'>
@@ -34,7 +35,7 @@ function Information() {
         </div>
 
         {/* Information Mobile */ }
-        <div className='information-mobile'>
+        <div ref={ informationRef } className='information-mobile'>
             <div className='information-mobile-first-name'>Phrompong</div>
             <div className='information-mobile-last-name'>Khagtes</div>
             <div className='information-mobile-nick-name'>{ nickName }</div>

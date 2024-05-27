@@ -3,11 +3,8 @@ import "../header/header.css";
 import hamburger from "../../images/hamburger.png";
 import close from "../../images/close.png";
 
-function Header({ skillRef, experienceRef }) {
+function Header({ informationRef, skillRef, experienceRef }) {
     const [open, setOpen] = useState(false);
-
-    const ref = useRef(null);
-
     const headers = [
         "Home",
         "Skills",
@@ -18,8 +15,14 @@ function Header({ skillRef, experienceRef }) {
     console.log("test", skillRef)
 
     const handleClick = (o) => {
+
         switch (o) {
+            case "Home":
+                console.log("informationRef", informationRef);
+                informationRef.current?.scrollIntoView({ behavior: 'smooth' });
+                break;
             case "Skills":
+                console.log("skillRef", skillRef);
                 skillRef.current?.scrollIntoView({ behavior: 'smooth' });
                 break;
             case "Experience":

@@ -10,12 +10,16 @@ function App() {
 
   const skillRef = useRef(null);
   const experienceRef = useRef(null);
+  const informationRef = useRef(null);
 
   return (
     <div className="App">
-      {/* Header */ }
-      <Header skillRef={ skillRef } experienceRef={ experienceRef }></Header>
-      <Information></Information>
+      <Header
+        informationRef={ informationRef }
+        skillRef={ skillRef }
+        experienceRef={ experienceRef }></Header>
+
+      <Information informationRef={ informationRef }></Information>
       <Company></Company>
       <Skill skillRef={ skillRef }></Skill>
       <Experience experienceRef={ experienceRef }></Experience>
