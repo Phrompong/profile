@@ -88,7 +88,7 @@ function Experience() {
             // logo: CSILogo,
             companyName: "OTHER",
             // period: "Jun 2018 - Jun 2019",
-            // position: "System Programmer",
+            position: "Full Stack Developer",
             projects: [
                 {
                     name: "Schedule training management system : SEAC",

@@ -14,7 +14,6 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    gap: 30px;
 }
 
 .experience-card {
@@ -23,14 +22,15 @@
     flex-direction: column;
     padding: 1%;
     border-radius: 16px;
-    gap: 40px;
     width: 80%;
+    margin-top: 1%;
 }
 
 .experience-card-first {
     display: grid;
     grid-template-columns: 3% auto auto;
     gap: 2%;
+    grid-column: 100px;
 }
 
 .experience-card-name-image {
@@ -41,7 +41,7 @@
 
 .experience-card-name-company {
     display: flex;
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     color: #007AFF;
     line-height: 29.26px;
     font-weight: 700;
@@ -60,40 +60,43 @@
     display: flex;
     justify-content: flex-end;
     color: #FFFFFF;
-    font-size: 1.2vw;
+    font-size: 1vw;
 }
 
 .experience-card-second {
     font-size: 1.5vw;
     color: #FFFFFF;
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 34.13px;
+    margin-top: 2%;
 }
 
 .experience-card-third {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    margin-top: 2%;
 }
 
 .experience-card-third-project-name {
     font-size: 1.3vw;
     color: #FFFFFF;
-    font-weight: 700;
-    line-height: 29.26px;
+    font-weight: 750;
+    line-height: 20px;
+    margin-top: 1%;
 }
 
 .experience-card-third-project-group-detail {
     display: flex;
     margin-left: 1%;
     flex-direction: column;
-    gap: 30px;
+    margin-top: 1%;
 }
 
 .experience-card-third-project-name-detail {
-    font-size: 0.9vw;
+    font-size: 1.1vw;
     color: #FFFFFF;
     font-weight: 400;
-    line-height: 24.38px
+    line-height: 24.38px;
+    margin-bottom: 1%;
 }
