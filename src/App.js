@@ -11,10 +11,6 @@ function App() {
   const skillRef = useRef(null);
   const experienceRef = useRef(null);
 
-
-
-
-
   return (
     <div className="App">
       {/* Header */ }
