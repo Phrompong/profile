@@ -126,8 +126,8 @@
 }
 
 .information-nick-name:hover {
-    content: url('../../images/giphy.gif');
-    width: 25%;
+    /* content: url('../../images/giphy.gif');
+    width: 25%; */
 }
 
 /* .information-nick-name:hover {

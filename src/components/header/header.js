@@ -7,10 +7,10 @@ function Header() {
     const [open, setOpen] = useState(false);
 
     const headers = [
-        "<Home>",
-        "<Skills>",
-        "<Experience>",
-        "<Contact>"
+        "Home",
+        "Skills",
+        "Experience",
+        "Contact"
     ];
 
     return (
