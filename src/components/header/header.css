@@ -29,17 +29,19 @@
     .header-mobile {
         display: flex;
         justify-content: flex-end;
-        background-color: #000000;
         align-items: center;
-        padding: 10px;
         color: #CED4DA;
         cursor: pointer;
+        position: fixed;
+        top: 0px;
+        width: 100%;
+        margin-top: 10px;
     }
 
     .header-image-burger {
         display: flex;
         margin-right: 3%;
-        width: 4%;
+        width: 5%;
         cursor: pointer;
     }
 
