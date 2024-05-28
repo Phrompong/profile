@@ -13,6 +13,7 @@ function Experience({ experienceRef }) {
             companySub: "(Onsite TN Incorporation limited.)",
             position: "Senior Full Stack Developer",
             projects: [{
+                id: 1,
                 name: "Sales system : Government Savings Bank",
                 details: [
                     "Develop back-end using NodeJS, RabbitMQ, MongoDB, SQL",
@@ -29,6 +30,7 @@ function Experience({ experienceRef }) {
             position: "Full Stack Developer",
             projects: [
                 {
+                    id: 1,
                     name: "NEW POS : PTT Oil and Retail Business PCL (OR)",
                     details: [
                         "Develop back-end using NodeJS, RabbitMQ, Redis, .NET, MongoDB, SQL",
@@ -48,6 +50,7 @@ function Experience({ experienceRef }) {
             position: "Programmer",
             projects: [
                 {
+                    id: 1,
                     name: "Cigna anywhere : Cigna Insurance PCL",
                     details: [
                         "Develop back-end using .NET",
@@ -64,18 +67,21 @@ function Experience({ experienceRef }) {
             position: "System Programmer",
             projects: [
                 {
+                    id: 1,
                     name: "Inventory management system : Panasonic Thailand",
                     details: [
                         "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap"
                     ]
                 },
                 {
+                    id: 2,
                     name: "Online request system : Yip In Tsoi Co., LTD.",
                     details: [
                         "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap"
                     ]
                 },
                 {
+                    id: 3,
                     name: "Product Line system : Teijin Polyester (Thailand) Limited.",
                     details: [
                         "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap"
@@ -91,30 +97,35 @@ function Experience({ experienceRef }) {
             position: "Full Stack Developer",
             projects: [
                 {
+                    id: 1,
                     name: "Schedule training management system : SEAC",
                     details: [
                         "Develop back-end using .NET, MySQL"
                     ]
                 },
                 {
+                    id: 2,
                     name: "CCTV : AI FiRST",
                     details: [
                         "Develop back-end and front-end using Angular, .NET, MySQL, Ashura, Yitu"
                     ]
                 },
                 {
+                    id: 3,
                     name: "Smart city on cloud : AI FiRST",
                     details: [
                         "Develop back-end using NodeJS, MySQL, Clarify, Ashura"
                     ]
                 },
                 {
+                    id: 4,
                     name: "Electronic Right Offering : Asia wealth securities company limited",
                     details: [
                         "Develop back-end and front-end using NodeJS, ReactJS, Mongo DB"
                     ]
                 },
                 {
+                    id: 5,
                     name: "Shipper System : Gulf Energy Development Public Company Limited",
                     details: [
                         "Develop back-end and front-end using NestJS, ReactJS, MySQL"
@@ -132,7 +143,7 @@ function Experience({ experienceRef }) {
         <div className="container">
             { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
                 return (
-                    <div className="experience-card" key={ index }>
+                    <div className="experience-card" key={ companyName }>
                         <div className="experience-card-first">
                             <img className="experience-card-name-image" src={ logo }></img>
                             <div className="experience-card-name-company">
@@ -145,19 +156,18 @@ function Experience({ experienceRef }) {
                         <div className="experience-card-second">{ position }</div>
 
                         <div className="experience-card-third">
-                            { projects && projects.map(({ name, details }, index) => {
-                                return (
-                                    <>
-                                        <div className="experience-card-third-project-name">{ name }</div>
-                                        <div className="experience-card-third-project-group-detail">
-                                            { details.map((detail, index) => {
-                                                return <>  <li className="experience-card-third-project-name-detail">{ detail }</li></>
-                                            }) }
-                                        </div>
-                                    </>
-                                )
-                            }) }
-
+                            { projects && projects.map(({ id, name, details }, index) => (
+                                <div key={ index } className="experience-card-third-project-name">
+                                    { name }
+                                    <div className="experience-card-third-project-group-detail">
+                                        { details.map((detail, indexDetail) => (
+                                            <li key={ indexDetail } className="experience-card-third-project-name-detail">
+                                                { detail }
+                                            </li>
+                                        )) }
+                                    </div>
+                                </div>
+                            )) }
                         </div>
                     </div>
                 )
@@ -169,37 +179,32 @@ function Experience({ experienceRef }) {
 
         {/* Mobile */ }
         <div className="container-mobile">
-            { details.map(({ logo, companyName, companySub, period, position, projects }, index) => {
-                return <>
-                    <div className="mobile-experience-card">
-                        <img className="mobile-experience-card-name-image" src={ logo }></img>
-                        <div className="mobile-experience-card-name-company">
-                            { companyName }
-                        </div>
-                        <div className="mobile-experience-card-name-company-second">{ companySub }</div>
-                        <div className="mobile-experience-card-period">{ period }</div>
-
-                        <div className="mobile-experience-card-second">{ position }</div>
-
-                        <div className="mobile-experience-card-third">
-                            { projects && projects.map(({ name, details }, index) => {
-                                return (
-                                    <>
-                                        <div className="mobile-experience-card-third-project-name">{ name }</div>
-                                        <div className="mobile-experience-card-third-project-group-detail">
-                                            { details.map((detail, index) => {
-                                                return <>  <li className="mobile-experience-card-third-project-name-detail">{ detail }</li></>
-                                            }) }
-                                        </div>
-                                    </>
-                                )
-                            }) }
-
-                        </div>
+            { details && details.map(({ logo, companyName, companySub, period, position, projects }, detailIndex) => (
+                <div key={ companyName + detailIndex } className="mobile-experience-card">
+                    <img className="mobile-experience-card-name-image" src={ logo }></img>
+                    <div className="mobile-experience-card-name-company">
+                        { companyName }
                     </div>
-                </>
-            }) }
-        </div>
+                    <div className="mobile-experience-card-name-company-second">{ companySub }  </div>
+                    <div className="mobile-experience-card-period">{ period }</div>
+                    <div className="mobile-experience-card-second">{ position }</div>
+                    <div className="mobile-experience-card-third">
+                        { projects && projects.map(({ name, details }, projectIndex) => (
+                            <div key={ projectIndex }>
+                                <div className="mobile-experience-card-third-project-name">{ name }</div>
+                                <div className="mobile-experience-card-third-project-group-detail">
+                                    { details.map((detail, detailIndex) => (
+                                        <li key={ detailIndex } className="mobile-experience-card-third-project-name-detail">{ detail }</li>
+                                    )) }
+                                </div>
+                            </div>
+                        )) }
+
+                    </div>
+                </div>
+
+            )) }
+        </div >
 
 
     </>

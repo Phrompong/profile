@@ -14,14 +14,11 @@ function Header({ informationRef, skillRef, experienceRef, contactRef }) {
 
 
     const handleClick = (o) => {
-
         switch (o) {
             case "Home":
-                console.log("informationRef", informationRef);
                 informationRef.current?.scrollIntoView({ behavior: 'smooth' });
                 break;
             case "Skills":
-                console.log("skillRef", skillRef);
                 skillRef.current?.scrollIntoView({ behavior: 'smooth' });
                 break;
             case "Experience":
@@ -38,8 +35,8 @@ function Header({ informationRef, skillRef, experienceRef, contactRef }) {
             {/* Header Desktop */ }
             <div className='header'>
                 <span className='header-list'>
-                    { headers.map((o) => (
-                        < div onClick={ () => { handleClick(o) } }> { o }</div>
+                    { headers.map((o, index) => (
+                        < div key={ index } onClick={ () => { handleClick(o) } }> { o }</div>
                     )) }
                 </span>
             </div>
@@ -58,8 +55,8 @@ function Header({ informationRef, skillRef, experienceRef, contactRef }) {
                             className="header-menu-image-close"
                             src={ close }></img>
                         <div className="header-menu-list">
-                            { headers.map((o) => (
-                                <a onClick={ () => { handleClick(o) } }> { o }</a>
+                            { headers.map((o, index) => (
+                                <a key={ index } onClick={ () => { handleClick(o) } }> { o }</a>
                             )) }
                         </div>
                     </div>
