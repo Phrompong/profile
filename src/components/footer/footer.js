@@ -4,13 +4,19 @@ import contact_tel from "../../images/contact_tel.png";
 import contact_mail from "../../images/contact_mail.png";
 import contact_line from "../../images/contact_line.png";
 import contact_linkIn from "../../images/contact_linkin.png";
+import logo_download from "../../images/logo_download.png";
 
 function Footer() {
     return <>
         <div className="footer" >
             <div className="footer-title">More about me?</div>
             <div className="footer-information">This is complete me, download my resume and find all about me.</div>
-            <img className="footer-button" src={ button_download } ></img>
+            <button className="footer-button">
+                <span className="footer-button-text"> Download Resume</span>
+                <img src={ logo_download } className="footer-button-image"></img>
+            </button>
+
+            {/* <img className="footer-button" src={ button_download } ></img> */ }
 
             <div className="footer-word-contact">or contact me</div>
             <div className="footer-contact">

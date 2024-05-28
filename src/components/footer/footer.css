@@ -24,11 +24,30 @@
 .footer-button {
     width: 20%;
     cursor: pointer;
+    background-color: #0041BF;
+    border-radius: 28px;
+    padding: 1%;
+    border-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 0.7vw;
+    align-items: baseline;
+}
+
+.footer-button-text {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 1.5vw;
+}
+
+.footer-button-image {
+    width: 1.5vw;
 }
 
 .footer-word-contact {
     font-weight: 400;
-    font-size: 1vw;
+    font-size: 2vw;
     color: #FFFFFF;
 }
 
