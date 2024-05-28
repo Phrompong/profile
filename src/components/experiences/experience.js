@@ -145,7 +145,7 @@ function Experience({ experienceRef }) {
                 return (
                     <div className="experience-card" key={ companyName }>
                         <div className="experience-card-first">
-                            <img className="experience-card-name-image" src={ logo }></img>
+                            <img className="experience-card-name-image" src={ logo } alt={ companyName }></img>
                             <div className="experience-card-name-company">
                                 { companyName }
                             </div>
