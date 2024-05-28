@@ -6,9 +6,9 @@ import contact_line from "../../images/contact_line.png";
 import contact_linkIn from "../../images/contact_linkin.png";
 import logo_download from "../../images/logo_download.png";
 
-function Footer() {
+function Footer({ contactRef }) {
     return <>
-        <div className="footer" >
+        <div ref={ contactRef } className="footer" >
             <div className="footer-title">More about me?</div>
             <div className="footer-information">This is complete me, download my resume and find all about me.</div>
             <button className="footer-button">

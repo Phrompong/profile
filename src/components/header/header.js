@@ -3,7 +3,7 @@ import "../header/header.css";
 import hamburger from "../../images/hamburger.png";
 import close from "../../images/close.png";
 
-function Header({ informationRef, skillRef, experienceRef }) {
+function Header({ informationRef, skillRef, experienceRef, contactRef }) {
     const [open, setOpen] = useState(false);
     const headers = [
         "Home",
@@ -26,6 +26,9 @@ function Header({ informationRef, skillRef, experienceRef }) {
                 break;
             case "Experience":
                 experienceRef.current?.scrollIntoView({ behavior: 'smooth' });
+                break;
+            case "Contact":
+                contactRef.current?.scrollIntoView({ behavior: 'smooth' });
                 break;
         }
     };
