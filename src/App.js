@@ -4,6 +4,7 @@ import Information from "./components/information/information.js";
 import Company from './components/company/company';
 import Skill from "./components/skill/skill";
 import Experience from './components/experiences/experience';
+import MyProject from './components/my-project/my-project';
 import { useRef } from 'react';
 import Footer from './components/footer/footer';
 
@@ -24,6 +25,7 @@ function App() {
       <Company></Company>
       <Skill skillRef={ skillRef }></Skill>
       <Experience experienceRef={ experienceRef }></Experience>
+      <MyProject></MyProject>
       <Footer></Footer>
     </div >
   );
