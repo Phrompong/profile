@@ -15,7 +15,7 @@ function App() {
   const informationRef = useRef(null);
   const contactRef = useRef(null);
 
-  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
 
   const handleDarkMode = () => {
     setIsDarkMode(!isDarkMode);

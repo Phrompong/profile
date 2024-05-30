@@ -21,7 +21,7 @@ function Information({ informationRef, isDarkMode }) {
                 <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-first-name" }>PHROMPONG</div>
                 <div className='information-group-last-name-nick-name'>
                     {/* <div className='information-last-name'> */ }
-                    <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name" }>
+                      <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name" }>
                         KHAGTES
                     </div>
                     <div className={ isDarkMode ? "information-nick-name-dark-mode" : "information-nick-name" }>
@@ -89,12 +89,12 @@ function Information({ informationRef, isDarkMode }) {
 
         {/* Information Mobile */ }
         < div ref={ informationRef } className='information-mobile' >
-            <div className='information-mobile-first-name'>Phrompong</div>
-            <div className='information-mobile-last-name'>Khagtes</div>
-            <div className='information-mobile-nick-name'>{ nickName }</div>
+            <div className={ isDarkMode ? "information-mobile-first-name-dark-mode" : 'information-mobile-first-name' }>Phrompong</div>
+            <div className={ isDarkMode ? "information-mobile-last-name-dark-mode" : 'information-mobile-last-name' }>Khagtes</div>
+            <div className={ isDarkMode ? "information-mobile-nick-name-dark-mode" : 'information-mobile-nick-name' }> { nickName }</div>
             <img src={ profile_image } className='information-image'></img>
             <div className='information-mobile-position'>Full Stack  Developer</div>
-            <span className='information-mobile-detail'>
+            <span className={ isDarkMode ? "information-mobile-detail-dark-mode" : 'information-mobile-detail' }>
                 5 years experience in programmer.
                 The scope of work includes Software development,
                 Software structure design, Database management,

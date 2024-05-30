@@ -2,6 +2,10 @@
     width: 9vw;
 }
 
+.img-program-db:hover {
+    transform: scale(1.03);
+}
+
 .img-framework {
     width: 9vw;
 }

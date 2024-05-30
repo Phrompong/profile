@@ -13,6 +13,10 @@
     object-fit: cover;
 }
 
+.company-image:hover {
+    transform: scale(1.05);
+}
+
 .company-vertical-line {
     border-left: 1px solid #6C757D;
     height: 6vw;

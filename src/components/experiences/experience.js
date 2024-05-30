@@ -187,21 +187,21 @@ function Experience({ experienceRef, isDarkMode }) {
         {/* Mobile */ }
         <div className="container-mobile">
             { details && details.map(({ logo, companyName, companySub, period, position, projects }, detailIndex) => (
-                <div key={ companyName + detailIndex } className="mobile-experience-card">
+                <div key={ companyName + detailIndex } className={ isDarkMode ? "mobile-experience-card-dark-mode" : "mobile-experience-card" }>
                     <img className="mobile-experience-card-name-image" src={ logo }></img>
                     <div className="mobile-experience-card-name-company">
                         { companyName }
                     </div>
-                    <div className="mobile-experience-card-name-company-second">{ companySub }  </div>
-                    <div className="mobile-experience-card-period">{ period }</div>
-                    <div className="mobile-experience-card-second">{ position }</div>
+                    <div className={ isDarkMode ? "mobile-experience-card-name-company-second-dark-mode" : "mobile-experience-card-name-company-second" }>{ companySub }  </div>
+                    <div className={ isDarkMode ? "mobile-experience-card-period-dark-mode" : "mobile-experience-card-period" }>{ period }</div>
+                    <div className={ isDarkMode ? "mobile-experience-card-second-dark-mode" : "mobile-experience-card-second" }>{ position }</div>
                     <div className="mobile-experience-card-third">
                         { projects && projects.map(({ name, details }, projectIndex) => (
                             <div key={ projectIndex }>
-                                <div className="mobile-experience-card-third-project-name">{ name }</div>
+                                <div className={ isDarkMode ? "mobile-experience-card-third-project-name-dark-mode" : "mobile-experience-card-third-project-name" }>{ name }</div>
                                 <div className="mobile-experience-card-third-project-group-detail">
                                     { details.map((detail, detailIndex) => (
-                                        <li key={ detailIndex } className="mobile-experience-card-third-project-name-detail">{ detail }</li>
+                                        <li key={ detailIndex } className={ isDarkMode ? "mobile-experience-card-third-project-name-detail-dark-mode" : "mobile-experience-card-third-project-name-detail" }>{ detail }</li>
                                     )) }
                                 </div>
                             </div>
