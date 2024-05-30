@@ -9,6 +9,18 @@
     cursor: pointer;
 }
 
+.experience-topic-dark-mode {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3vw;
+    background: linear-gradient(to right, #000000, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
+
 .container {
     display: flex;
     flex-direction: column;
@@ -129,6 +141,16 @@
     margin-top: 1%;
 }
 
+.experience-card-dark-mode {
+    display: flex;
+    background: #E9ECEF;
+    flex-direction: column;
+    padding: 1%;
+    border-radius: 16px;
+    width: 80%;
+    margin-top: 1%;
+}
+
 .experience-card-first {
     display: grid;
     grid-template-columns: 3% auto auto;
@@ -159,6 +181,15 @@
     margin-top: 1%;
 }
 
+.experience-card-name-company-second-dark-mode {
+    display: flex;
+    font-size: 1vw;
+    color: #6C757D;
+    line-height: 29.26px;
+    font-weight: 400;
+    margin-top: 1%;
+}
+
 .experience-card-period {
     display: flex;
     justify-content: flex-end;
@@ -169,6 +200,15 @@
 .experience-card-second {
     font-size: 1.5vw;
     color: #FFFFFF;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 34.13px;
+    margin-top: 2%;
+}
+
+.experience-card-second-dark-mode {
+    font-size: 1.5vw;
+    color: #000000;
     font-style: italic;
     font-weight: 600;
     line-height: 34.13px;
@@ -189,6 +229,14 @@
     margin-top: 1%;
 }
 
+.experience-card-third-project-name-dark-mode {
+    font-size: 1.3vw;
+    color: #000000;
+    font-weight: 650;
+    line-height: 20px;
+    margin-top: 1%;
+}
+
 .experience-card-third-project-group-detail {
     display: flex;
     margin-left: 1%;
@@ -199,6 +247,14 @@
 .experience-card-third-project-name-detail {
     font-size: 1.1vw;
     color: #FFFFFF;
+    font-weight: 400;
+    line-height: 24.38px;
+    margin-bottom: 1%;
+}
+
+.experience-card-third-project-name-detail-dark-mode {
+    font-size: 1.1vw;
+    color: #000000;
     font-weight: 400;
     line-height: 24.38px;
     margin-bottom: 1%;

@@ -108,6 +108,14 @@
     -webkit-background-clip: text;
 }
 
+.information-first-name-dark-mode {
+    font-weight: 700;
+    font-size: 6vw;
+    background: linear-gradient(to right, #000000, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
 .information-group-last-name-nick-name {
     display: flex;
     padding: 0;
@@ -126,11 +134,34 @@
 
 }
 
+.information-first-name-dark-mode {
+    display: flex;
+    font-weight: 700;
+    font-size: 6vw;
+    background: linear-gradient(to right, #000000, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    gap: 10px;
+
+}
+
 .information-nick-name {
     display: flex;
     font-weight: 700;
     font-size: 2vw;
     background: linear-gradient(to right, #FFFFFF, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.information-nick-name-dark-mode {
+    display: flex;
+    font-weight: 700;
+    font-size: 2vw;
+    background: linear-gradient(to right, #000000, #6C757D);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     align-items: center;
@@ -157,6 +188,13 @@
 
 .information-detail {
     color: #CED4DA;
+    font-weight: 400;
+    font-size: 1.5vw;
+
+}
+
+.information-detail-dark-mode {
+    color: #6C757D;
     font-weight: 400;
     font-size: 1.5vw;
 

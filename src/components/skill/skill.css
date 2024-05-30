@@ -17,6 +17,17 @@
     cursor: pointer;
 }
 
+.skill-topic-dark-mode {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 3vw;
+    background: linear-gradient(to right, #000000, #6C757D);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    cursor: pointer;
+}
+
 .skill {
     display: grid;
     align-content: center;

@@ -12,6 +12,13 @@
     border-radius: 16px;
 }
 
+.my-project-frame-dark-mode {
+    border: 2px solid #000000;
+    color: #FFFFFF;
+    width: 100%;
+    border-radius: 16px;
+}
+
 .container-text-in-border {
     display: flex;
     justify-content: center;
@@ -30,6 +37,21 @@
     color: #CBC8C8;
     cursor: pointer;
     background-color: black;
+}
+
+.text-in-border-dark-mode {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin-top: -2vw;
+    width: 20vw;
+    text-align: center;
+    font-size: 3vw;
+    /* font-size: 30px; */
+    font-weight: 700;
+    color: #6C757D;
+    cursor: pointer;
+    background-color: white;
 }
 
 .container-information {
@@ -51,8 +73,18 @@
     color: #FFFFFF;
 }
 
+.container-information-project-name-dark-mode {
+    font-weight: 700;
+    color: #000000;
+}
+
 .container-information-description {
     font-weight: 400;
+}
+
+.container-information-description-dark-mode {
+    font-weight: 400;
+    color: #000000;
 }
 
 .container-information-button {

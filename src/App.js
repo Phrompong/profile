@@ -31,12 +31,20 @@ function App() {
         handleDarkMode={ handleDarkMode }
         isDarkMode={ isDarkMode }
       ></Header>
-
-      <Information informationRef={ informationRef }></Information>
+      <Information
+        informationRef={ informationRef }
+        isDarkMode={ isDarkMode }>
+      </Information>
       <Company></Company>
-      <Skill skillRef={ skillRef }></Skill>
-      <Experience experienceRef={ experienceRef }></Experience>
-      <MyProject></MyProject>
+      <Skill
+        skillRef={ skillRef }
+        isDarkMode={ isDarkMode }
+      ></Skill>
+      <Experience
+        experienceRef={ experienceRef }
+        isDarkMode={ isDarkMode }
+      ></Experience>
+      <MyProject isDarkMode={ isDarkMode }></MyProject>
       <Footer contactRef={ contactRef }></Footer>
     </div >
   );

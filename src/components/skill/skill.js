@@ -14,10 +14,12 @@ import iconNest from "../../images/nestjs.png";
 import iconReact from "../../images/reactjs.png";
 import iconAspNet from "../../images/aspnet.png";
 
-function Skill({ skillRef }) {
+function Skill({ skillRef, isDarkMode }) {
     return (
         <>
-            <div ref={ skillRef } className="skill-topic">SKILLS</div>
+            <div ref={ skillRef } className={ isDarkMode ? "skill-topic-dark-mode" : "skill-topic" }>
+                SKILLS
+            </div>
             <div className="skill">
                 <div className="program-lang">
                     <span className="program-lang-title">

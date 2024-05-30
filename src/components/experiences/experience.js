@@ -4,10 +4,17 @@ import PTTLogo from "../../images/logo_PTT_experience.png";
 import FusionLogo from "../../images/logo_Fusion_experience.png";
 import CSILogo from "../../images/logo_CSI.png";
 
-function Experience({ experienceRef }) {
+import TNLogoLightMode from "../../images/logo_tn_light_mode.png";
+import PttLogoLightMode from "../../images/logo_ptt_light_mode.png";
+import FusionLightMode from "../../images/logo_fusion_light_mode.png";
+import CsiLightMode from "../../images/logo_csi_light_mode.png";
+
+import ProfileImage from "../../images/chopper.png";
+
+function Experience({ experienceRef, isDarkMode }) {
     const details = [
         {
-            logo: TNLogo,
+            logo: isDarkMode ? TNLogoLightMode : TNLogo,
             companyName: "Advanced Personnel and Solutions Co., Ltd.",
             period: "Sep 2023 - Present",
             companySub: "(Onsite TN Incorporation limited.)",
@@ -23,7 +30,7 @@ function Experience({ experienceRef }) {
             }]
         },
         {
-            logo: PTTLogo,
+            logo: isDarkMode ? PttLogoLightMode : PTTLogo,
             companyName: "Solution Link Co.Ltd.",
             period: "Feb 2020 - Aug 2023",
             companySub: "(Onsite PTT Digital Solutions Co.Ltd.)",
@@ -44,7 +51,7 @@ function Experience({ experienceRef }) {
             ]
         },
         {
-            logo: FusionLogo,
+            logo: isDarkMode ? FusionLightMode : FusionLogo,
             companyName: "Fusion Solution Co.,Ltd.",
             period: "Jul 2019 - Jan 2020",
             position: "Programmer",
@@ -61,7 +68,7 @@ function Experience({ experienceRef }) {
             ]
         },
         {
-            logo: CSILogo,
+            logo: isDarkMode ? CsiLightMode : CSILogo,
             companyName: "C.S.I. GROUP",
             period: "Jun 2018 - Jun 2019",
             position: "System Programmer",
@@ -91,7 +98,7 @@ function Experience({ experienceRef }) {
             ]
         }
         , {
-            // logo: CSILogo,
+
             companyName: "OTHER",
             // period: "Jun 2018 - Jun 2019",
             position: "Full Stack Developer",
@@ -139,29 +146,29 @@ function Experience({ experienceRef }) {
 
     return <>
 
-        <div ref={ experienceRef } className="experience-topic">EXPERIENCE</div>
+        <div ref={ experienceRef } className={ isDarkMode ? "experience-topic-dark-mode" : "experience-topic" }>EXPERIENCE</div>
         <div className="container">
             { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
                 return (
-                    <div className="experience-card" key={ companyName }>
+                    <div className={ isDarkMode ? "experience-card-dark-mode" : "experience-card" } key={ companyName }>
                         <div className="experience-card-first">
-                            <img className="experience-card-name-image" src={ logo } alt={ companyName }></img>
+                            { companyName === "OTHER" ? <></> : <img className="experience-card-name-image" src={ logo } alt={ companyName }></img> }
                             <div className="experience-card-name-company">
                                 { companyName }
                             </div>
                             <div className="experience-card-period">{ period }</div>
-                            <div className="experience-card-name-company-second">{ companySub }</div>
+                            <div className={ isDarkMode ? "experience-card-name-company-second-dark-mode" : "experience-card-name-company-second" }>{ companySub }</div>
                         </div>
 
-                        <div className="experience-card-second">{ position }</div>
+                        <div className={ isDarkMode ? "experience-card-second-dark-mode" : "experience-card-second" }>{ position }</div>
 
                         <div className="experience-card-third">
                             { projects && projects.map(({ id, name, details }, index) => (
-                                <div key={ index } className="experience-card-third-project-name">
+                                <div key={ index } className={ isDarkMode ? "experience-card-third-project-name-dark-mode" : "experience-card-third-project-name" }>
                                     { name }
                                     <div className="experience-card-third-project-group-detail">
                                         { details.map((detail, indexDetail) => (
-                                            <li key={ indexDetail } className="experience-card-third-project-name-detail">
+                                            <li key={ indexDetail } className={ isDarkMode ? "experience-card-third-project-name-detail-dark-mode" : "experience-card-third-project-name-detail" }>
                                                 { detail }
                                             </li>
                                         )) }
