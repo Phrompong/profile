@@ -5,7 +5,7 @@ import Company from './components/company/company';
 import Skill from "./components/skill/skill";
 import Experience from './components/experiences/experience';
 import MyProject from './components/my-project/my-project';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import Footer from './components/footer/footer';
 
 function App() {
@@ -15,13 +15,21 @@ function App() {
   const informationRef = useRef(null);
   const contactRef = useRef(null);
 
+  const [isDarkMode, setIsDarkMode] = useState(true);
+
+  const handleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  }
+
   return (
-    <div className="App">
+    <div className={ isDarkMode ? "App-dark-mode" : "App" }>
       <Header
         informationRef={ informationRef }
         skillRef={ skillRef }
         experienceRef={ experienceRef }
         contactRef={ contactRef }
+        handleDarkMode={ handleDarkMode }
+        isDarkMode={ isDarkMode }
       ></Header>
 
       <Information informationRef={ informationRef }></Information>

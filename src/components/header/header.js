@@ -3,13 +3,21 @@ import "../header/header.css";
 import hamburger from "../../images/hamburger.png";
 import close from "../../images/close.png";
 
-function Header({ informationRef, skillRef, experienceRef, contactRef }) {
+function Header({
+    informationRef,
+    skillRef,
+    experienceRef,
+    contactRef,
+    handleDarkMode,
+    isDarkMode
+}) {
     const [open, setOpen] = useState(false);
     const headers = [
         "Home",
         "Skills",
         "Experience",
-        "Contact"
+        "Contact",
+        "Mode"
     ];
 
 
@@ -27,14 +35,17 @@ function Header({ informationRef, skillRef, experienceRef, contactRef }) {
             case "Contact":
                 contactRef.current?.scrollIntoView({ behavior: 'smooth' });
                 break;
+            case 'Mode':
+                handleDarkMode();
+                break;
         }
     };
 
     return (
         <>
             {/* Header Desktop */ }
-            <div className='header'>
-                <span className='header-list'>
+            <div className={ isDarkMode ? "header-dark-mode" : "header" }>
+                <span className={ isDarkMode ? "header-list-dark-mode" : "header-list" }>
                     { headers.map((o, index) => (
                         < div key={ index } onClick={ () => { handleClick(o) } }> { o }</div>
                     )) }

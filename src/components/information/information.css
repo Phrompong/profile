@@ -1,7 +1,6 @@
 .information {
     display: grid;
     grid-template-columns: 50% 50%;
-    background-color: #000000;
     width: 100%;
     color: white
 }

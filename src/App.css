@@ -26,3 +26,13 @@ body {
     opacity: 1;
   }
 }
+
+.App-dark-mode {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  gap: 5vw;
+  background-color: white;
+  animation: fadeIn 3s;
+}
