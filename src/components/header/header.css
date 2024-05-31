@@ -28,7 +28,7 @@
     color: #6C757D;
     align-items: center;
     border: 2px solid #FFFFFF;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .header-list-dark-mode {
@@ -58,6 +58,13 @@
         top: 0px;
         width: 100%;
         margin-top: 10px;
+    }
+
+    .header-group-top {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        align-items: center;
     }
 
     .header-image-burger {
@@ -92,6 +99,18 @@
         overflow-x: hidden;
     }
 
+    .header-menu-open-dark-mode {
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        width: 50%;
+        transition: 0.5s;
+        overflow-x: hidden;
+        background-color: #E9ECEF;
+    }
+
     .header-menu-container {
         display: flex;
         padding: 5%;
@@ -102,6 +121,16 @@
     .header-menu-image-close {
         width: 5vw;
         cursor: pointer;
+        margin-left: 10%;
+
+    }
+
+    .header-menu-image-icon-close {
+        cursor: pointer;
+        margin-left: 10%;
+        font-size: 1000px;
+        color: #000000;
+        font-size: large;
     }
 
     .header-menu-list {
@@ -112,6 +141,16 @@
         align-items: center;
         gap: 30px;
         color: #CED4DA;
+    }
+
+    .header-menu-list-dark-mode {
+        margin-top: 20%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        color: #000000;
     }
 
 
