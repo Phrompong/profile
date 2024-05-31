@@ -21,7 +21,7 @@ function Information({ informationRef, isDarkMode }) {
                 <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-first-name" }>PHROMPONG</div>
                 <div className='information-group-last-name-nick-name'>
                     {/* <div className='information-last-name'> */ }
-                      <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name" }>
+                    <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name" }>
                         KHAGTES
                     </div>
                     <div className={ isDarkMode ? "information-nick-name-dark-mode" : "information-nick-name" }>

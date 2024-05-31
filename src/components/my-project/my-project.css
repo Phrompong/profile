@@ -5,6 +5,14 @@
     width: 80%;
 }
 
+.mobile-text-in-border-dark-mode {
+    display: none;
+}
+
+.mobile-text-in-border {
+    display: none;
+}
+
 .my-project-frame {
     border: 2px solid white;
     color: #FFFFFF;
@@ -98,6 +106,10 @@
     gap: 0.3vw;
     cursor: pointer;
     align-items: baseline;
+}
+
+.container-information-button:hover {
+    transform: scale(1.03);
 }
 
 a {

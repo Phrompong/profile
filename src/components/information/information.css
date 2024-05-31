@@ -263,9 +263,7 @@
     top: 236px;
 }
 
-.information-image:hover {
-    transform: scale(1.05);
-}
+
 
 .information-contact {
     display: flex;

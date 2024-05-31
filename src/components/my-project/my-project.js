@@ -25,7 +25,7 @@ function MyProject({ isDarkMode }) {
                         JAEW TRANSLATE
                     </div>
                     <div className={ isDarkMode ? "container-information-description-dark-mode" : "container-information-description" }>
-                        พิมตั้งยาวต่างดาวได้ไงให้แจ๋วช่วยเลย
+                        {/* พิมตั้งยาวต่างดาวได้ไงให้แจ๋วช่วยเลย */ }
                     </div>
                     <a href="https://jaewtranslate.com/">
                         <button

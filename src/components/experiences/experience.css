@@ -4,6 +4,14 @@
     gap: 3vw;
 }
 
+.mobile-experience-topic-dark-mode {
+    display: none;
+}
+
+.mobile-experience-topic {
+    display: none;
+}
+
 .experience-topic {
     display: flex;
     justify-content: center;

@@ -4,7 +4,7 @@
     background-color: #0041BF;
     flex-direction: column;
     align-items: center;
-    padding: 1%;
+    padding: 4%;
     gap: 3vw;
 }
 
@@ -34,6 +34,10 @@
     align-items: baseline;
 }
 
+.footer-button:hover {
+    transform: scale(1.03);
+}
+
 .footer-button-text {
     color: #FFFFFF;
     font-weight: 700;
@@ -58,5 +62,9 @@
 }
 
 .footer-contact-image {
-    width: 4vw;
+    width: 5vw;
+}
+
+.footer-contact-image:hover {
+    transform: scale(1.03);
 }
