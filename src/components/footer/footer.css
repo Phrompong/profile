@@ -22,7 +22,6 @@
 }
 
 .footer-button {
-    width: 20%;
     cursor: pointer;
     background-color: #0041BF;
     border-radius: 28px;
@@ -38,11 +37,12 @@
 .footer-button-text {
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 1.5vw;
+    font-size: 100%;
+    /* font-size: 1.5vw; */
 }
 
 .footer-button-image {
-    width: 1.5vw;
+    width: 10%
 }
 
 .footer-word-contact {

@@ -13,7 +13,7 @@ body {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  gap: 5vw;
+  gap: 4vw;
   background-color: #000000;
   animation: fadeIn 3s;
 }

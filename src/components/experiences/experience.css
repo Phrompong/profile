@@ -1,3 +1,9 @@
+.container-experience {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
 .experience-topic {
     display: flex;
     justify-content: center;

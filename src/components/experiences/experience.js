@@ -146,73 +146,75 @@ function Experience({ experienceRef, isDarkMode }) {
 
     return <>
 
-        <div ref={ experienceRef } className={ isDarkMode ? "experience-topic-dark-mode" : "experience-topic" }>EXPERIENCE</div>
-        <div className="container">
-            { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
-                return (
-                    <div className={ isDarkMode ? "experience-card-dark-mode" : "experience-card" } key={ companyName }>
-                        <div className="experience-card-first">
-                            { companyName === "OTHER" ? <></> : <img className="experience-card-name-image" src={ logo } alt={ companyName }></img> }
-                            <div className="experience-card-name-company">
-                                { companyName }
+        <div ref={ experienceRef } className="container-experience">
+            <div className={ isDarkMode ? "experience-topic-dark-mode" : "experience-topic" }>EXPERIENCE</div>
+            <div className="container">
+                { details && details.map(({ logo, companyName, period, companySub, position, projects }, index) => {
+                    return (
+                        <div className={ isDarkMode ? "experience-card-dark-mode" : "experience-card" } key={ companyName }>
+                            <div className="experience-card-first">
+                                { companyName === "OTHER" ? <></> : <img className="experience-card-name-image" src={ logo } alt={ companyName }></img> }
+                                <div className="experience-card-name-company">
+                                    { companyName }
+                                </div>
+                                <div className="experience-card-period">{ period }</div>
+                                <div className={ isDarkMode ? "experience-card-name-company-second-dark-mode" : "experience-card-name-company-second" }>{ companySub }</div>
                             </div>
-                            <div className="experience-card-period">{ period }</div>
-                            <div className={ isDarkMode ? "experience-card-name-company-second-dark-mode" : "experience-card-name-company-second" }>{ companySub }</div>
+
+                            <div className={ isDarkMode ? "experience-card-second-dark-mode" : "experience-card-second" }>{ position }</div>
+
+                            <div className="experience-card-third">
+                                { projects && projects.map(({ id, name, details }, index) => (
+                                    <div key={ index } className={ isDarkMode ? "experience-card-third-project-name-dark-mode" : "experience-card-third-project-name" }>
+                                        { name }
+                                        <div className="experience-card-third-project-group-detail">
+                                            { details.map((detail, indexDetail) => (
+                                                <li key={ indexDetail } className={ isDarkMode ? "experience-card-third-project-name-detail-dark-mode" : "experience-card-third-project-name-detail" }>
+                                                    { detail }
+                                                </li>
+                                            )) }
+                                        </div>
+                                    </div>
+                                )) }
+                            </div>
                         </div>
+                    )
+                }) }
 
-                        <div className={ isDarkMode ? "experience-card-second-dark-mode" : "experience-card-second" }>{ position }</div>
 
-                        <div className="experience-card-third">
-                            { projects && projects.map(({ id, name, details }, index) => (
-                                <div key={ index } className={ isDarkMode ? "experience-card-third-project-name-dark-mode" : "experience-card-third-project-name" }>
-                                    { name }
-                                    <div className="experience-card-third-project-group-detail">
-                                        { details.map((detail, indexDetail) => (
-                                            <li key={ indexDetail } className={ isDarkMode ? "experience-card-third-project-name-detail-dark-mode" : "experience-card-third-project-name-detail" }>
-                                                { detail }
-                                            </li>
+
+            </div >
+
+            {/* Mobile */ }
+            <div className={ isDarkMode ? "mobile-experience-topic-dark-mode" : "mobile-experience-topic" }>EXPERIENCE</div>
+            <div className="container-mobile">
+                { details && details.map(({ logo, companyName, companySub, period, position, projects }, detailIndex) => (
+                    <div key={ companyName + detailIndex } className={ isDarkMode ? "mobile-experience-card-dark-mode" : "mobile-experience-card" }>
+                        <img className="mobile-experience-card-name-image" src={ logo }></img>
+                        <div className="mobile-experience-card-name-company">
+                            { companyName }
+                        </div>
+                        <div className={ isDarkMode ? "mobile-experience-card-name-company-second-dark-mode" : "mobile-experience-card-name-company-second" }>{ companySub }  </div>
+                        <div className={ isDarkMode ? "mobile-experience-card-period-dark-mode" : "mobile-experience-card-period" }>{ period }</div>
+                        <div className={ isDarkMode ? "mobile-experience-card-second-dark-mode" : "mobile-experience-card-second" }>{ position }</div>
+                        <div className="mobile-experience-card-third">
+                            { projects && projects.map(({ name, details }, projectIndex) => (
+                                <div key={ projectIndex }>
+                                    <div className={ isDarkMode ? "mobile-experience-card-third-project-name-dark-mode" : "mobile-experience-card-third-project-name" }>{ name }</div>
+                                    <div className="mobile-experience-card-third-project-group-detail">
+                                        { details.map((detail, detailIndex) => (
+                                            <li key={ detailIndex } className={ isDarkMode ? "mobile-experience-card-third-project-name-detail-dark-mode" : "mobile-experience-card-third-project-name-detail" }>{ detail }</li>
                                         )) }
                                     </div>
                                 </div>
                             )) }
+
                         </div>
                     </div>
-                )
-            }) }
 
-
-
-        </div >
-
-        {/* Mobile */ }
-        <div ref={ experienceRef } className={ isDarkMode ? "mobile-experience-topic-dark-mode" : "mobile-experience-topic" }>EXPERIENCE</div>
-        <div className="container-mobile">
-            { details && details.map(({ logo, companyName, companySub, period, position, projects }, detailIndex) => (
-                <div key={ companyName + detailIndex } className={ isDarkMode ? "mobile-experience-card-dark-mode" : "mobile-experience-card" }>
-                    <img className="mobile-experience-card-name-image" src={ logo }></img>
-                    <div className="mobile-experience-card-name-company">
-                        { companyName }
-                    </div>
-                    <div className={ isDarkMode ? "mobile-experience-card-name-company-second-dark-mode" : "mobile-experience-card-name-company-second" }>{ companySub }  </div>
-                    <div className={ isDarkMode ? "mobile-experience-card-period-dark-mode" : "mobile-experience-card-period" }>{ period }</div>
-                    <div className={ isDarkMode ? "mobile-experience-card-second-dark-mode" : "mobile-experience-card-second" }>{ position }</div>
-                    <div className="mobile-experience-card-third">
-                        { projects && projects.map(({ name, details }, projectIndex) => (
-                            <div key={ projectIndex }>
-                                <div className={ isDarkMode ? "mobile-experience-card-third-project-name-dark-mode" : "mobile-experience-card-third-project-name" }>{ name }</div>
-                                <div className="mobile-experience-card-third-project-group-detail">
-                                    { details.map((detail, detailIndex) => (
-                                        <li key={ detailIndex } className={ isDarkMode ? "mobile-experience-card-third-project-name-detail-dark-mode" : "mobile-experience-card-third-project-name-detail" }>{ detail }</li>
-                                    )) }
-                                </div>
-                            </div>
-                        )) }
-
-                    </div>
-                </div>
-
-            )) }
-        </div >
+                )) }
+            </div >
+        </div>
 
 
     </>

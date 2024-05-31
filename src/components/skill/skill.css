@@ -1,3 +1,9 @@
+.container-skill {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+}
+
 .img-program-db {
     width: 9vw;
 }
@@ -48,7 +54,14 @@
 
 .program-lang {
     color: white;
-    /* border-style: dotted; */
+}
+
+.mobile-skill-topic-dark-mode {
+    display: none;
+}
+
+.mobile-skill-topic {
+    display: none;
 }
 
 .program-lang-title {

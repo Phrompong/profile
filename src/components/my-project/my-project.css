@@ -97,6 +97,7 @@
     flex-direction: row;
     gap: 0.3vw;
     cursor: pointer;
+    align-items: baseline;
 }
 
 a {
@@ -106,10 +107,11 @@ a {
 .container-information-button-text {
     color: white;
     font-weight: 700;
+    font-size: 100%;
 }
 
 .container-information-button-icon {
-    width: 1vw;
+    width: 70%;
 }
 
 
