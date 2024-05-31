@@ -185,6 +185,7 @@ function Experience({ experienceRef, isDarkMode }) {
         </div >
 
         {/* Mobile */ }
+        <div ref={ experienceRef } className={ isDarkMode ? "mobile-experience-topic-dark-mode" : "mobile-experience-topic" }>EXPERIENCE</div>
         <div className="container-mobile">
             { details && details.map(({ logo, companyName, companySub, period, position, projects }, detailIndex) => (
                 <div key={ companyName + detailIndex } className={ isDarkMode ? "mobile-experience-card-dark-mode" : "mobile-experience-card" }>

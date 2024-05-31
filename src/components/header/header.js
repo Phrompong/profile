@@ -122,7 +122,7 @@ function Header({
                     <div className="header-menu-container">
                         <div className="header-group-top">
                             { isDarkMode
-                                ? <CloseIcon className="header-menu-image-icon-close" sx={ { fontSize: "7vw" } } ></CloseIcon>
+                                ? <CloseIcon onClick={ () => { setOpen(!open) } } className="header-menu-image-icon-close" sx={ { fontSize: "7vw" } } ></CloseIcon>
                                 : <img onClick={ () => { setOpen(!open) } }
                                     className="header-menu-image-close"
                                     src={ close }></img> }

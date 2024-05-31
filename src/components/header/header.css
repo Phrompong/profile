@@ -48,6 +48,10 @@
         display: none;
     }
 
+    .header-dark-mode {
+        display: none;
+    }
+
     .header-mobile {
         display: flex;
         justify-content: flex-end;

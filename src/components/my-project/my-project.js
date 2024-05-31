@@ -11,6 +11,10 @@ function MyProject({ isDarkMode }) {
                     <div className={ isDarkMode ? "text-in-border-dark-mode" : "text-in-border" }>PROJECTS</div>
                 </div>
 
+                <div className="container-text-in-border">
+                    <div className={ isDarkMode ? "mobile-text-in-border-dark-mode" : "mobile-text-in-border" }>PROJECTS</div>
+                </div>
+
                 {/* Information */ }
                 <div className="container-information">
                     <img

@@ -101,6 +101,15 @@
         display: none;
     }
 
+    .skill-topic {
+        display: none;
+    }
+
+    .skill-topic-dark-mode {
+        display: none;
+    }
+
+
     .mobile-img-program-db {
         width: 12vw;
     }
@@ -113,8 +122,19 @@
         display: flex;
         justify-content: center;
         font-weight: 700;
-        font-size: 3vw;
+        font-size: 5vw;
         background: linear-gradient(to right, #FFFFFF, #6C757D);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
+    .mobile-skill-topic-dark-mode {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 5vw;
+        background: linear-gradient(to right, #000000, #6C757D);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         cursor: pointer;

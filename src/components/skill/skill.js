@@ -58,6 +58,9 @@ function Skill({ skillRef, isDarkMode }) {
                 </div>
             </div >
 
+            <div ref={ skillRef } className={ isDarkMode ? "mobile-skill-topic-dark-mode" : "mobile-skill-topic" }>
+                SKILLS
+            </div>
             <div className="mobile-skill">
                 <div className="mobile-program-lang">
                     <span className="mobile-program-lang-title">

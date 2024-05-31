@@ -37,6 +37,36 @@
         display: none;
     }
 
+    .experience-topic-dark-mode {
+        display: none;
+    }
+
+    .experience-topic {
+        display: none;
+    }
+
+    .mobile-experience-topic {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 5vw;
+        background: linear-gradient(to right, #FFFFFF, #6C757D);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
+    .mobile-experience-topic-dark-mode {
+        display: flex;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 5vw;
+        background: linear-gradient(to right, #000000, #6C757D);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        cursor: pointer;
+    }
+
     .container-mobile {
         display: flex;
         flex-direction: column;
