@@ -6,6 +6,7 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import { styled } from '@mui/material/styles';
 import Switch, { SwitchProps } from '@mui/material/Switch';
 import CloseIcon from '@mui/icons-material/Close';
+import MenuIcon from '@mui/icons-material/Menu';
 
 function Header({
     informationRef,
@@ -112,11 +113,17 @@ function Header({
             </div>
             {/* Header Mobile */ }
             <div className='header-mobile'>
-                <img
+                {
+                    isDarkMode ?
+                        <MenuIcon className='header-image-burger-dark-mode' onClick={ () => { setOpen(!open) } }></MenuIcon> :
+                        <MenuIcon className='header-image-burger' onClick={ () => { setOpen(!open) } }></MenuIcon>
+                }
+
+                {/* <img
                     onClick={ () => { setOpen(!open) } }
                     className='header-image-burger'
                     src={ hamburger }
-                    alt=""></img>
+                    alt=""></img> */}
 
                 <div className={ isDarkMode ? `header-menu${ open ? '-open-dark-mode' : '' }` : `header-menu${ open ? '-open' : '' }` }>
                     <div className="header-menu-container">

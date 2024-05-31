@@ -21,7 +21,7 @@
     justify-content: center;
     font-weight: 700;
     font-size: 3vw;
-    background: linear-gradient(to right, #FFFFFF, #6C757D);
+    background: linear-gradient(#FFFFFF, #6C757D);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     cursor: pointer;
@@ -32,7 +32,7 @@
     justify-content: center;
     font-weight: 700;
     font-size: 3vw;
-    background: linear-gradient(to right, #000000, #6C757D);
+    background: linear-gradient(#000000, #6C757D);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     cursor: pointer;
@@ -136,7 +136,7 @@
         justify-content: center;
         font-weight: 700;
         font-size: 5vw;
-        background: linear-gradient(to right, #FFFFFF, #6C757D);
+        background: linear-gradient(#FFFFFF, #6C757D);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         cursor: pointer;
@@ -147,7 +147,7 @@
         justify-content: center;
         font-weight: 700;
         font-size: 5vw;
-        background: linear-gradient(to right, #000000, #6C757D);
+        background: linear-gradient(#000000, #6C757D);
         -webkit-text-fill-color: transparent;
         -webkit-background-clip: text;
         cursor: pointer;

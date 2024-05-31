@@ -106,18 +106,42 @@ function Information({ informationRef, isDarkMode }) {
                 and integrate new functions into existing applications.
             </span>
             <div className="information-mobile-contact">
-                <a href="tel:0952535792">
-                    <img src={ contact_tel } alt="tel" className="information-mobile-contact-image" />
-                </a>
-                <a href="mailto:someone@example.com">
-                    <img src={ contact_mail } alt="mail" className="information-mobile-contact-image" />
-                </a>
-                <a href="https://line.me/ti/p/R12teBUknT">
-                    <img src={ contact_line } alt="line" className="information-mobile-contact-image" />
-                </a>
-                <a href="https://www.linkedin.com/in/phrompong-khagtes-115957188">
-                    <img src={ contact_linkIn } alt="linkIn" className="information-mobile-contact-image" />
-                </a>
+                { isDarkMode ?
+                    <a href="tel:0952535792">
+                        <img src={ contact_tel_light_mode } alt="tel" className="information-contact-image" />
+                    </a> :
+                    <a href="tel:0952535792">
+                        <img src={ contact_tel } alt="tel" className="information-contact-image" />
+                    </a>
+                }
+
+                {
+                    isDarkMode ?
+                        <a href="mailto:someone@example.com">
+                            <img src={ contact_mail_light_mode } alt="mail" className="information-contact-image" />
+                        </a> :
+                        <a href="mailto:someone@example.com">
+                            <img src={ contact_mail } alt="mail" className="information-contact-image" />
+                        </a>
+
+                }
+
+                {
+                    isDarkMode ?
+                        <a href="https://line.me/ti/p/R12teBUknT">
+                            <img src={ contact_line_light_mode } alt="line" className="information-contact-image" />
+                        </a> : <a href="https://line.me/ti/p/R12teBUknT">
+                            <img src={ contact_line } alt="line" className="information-contact-image" />
+                        </a>
+                }
+
+                { isDarkMode ?
+                    <a href="https://www.linkedin.com/in/phrompong-khagtes-115957188">
+                        <img src={ contact_linkIn_light_mode } alt="linkIn" className="information-contact-image" />
+                    </a>
+                    : <a href="https://www.linkedin.com/in/phrompong-khagtes-115957188">
+                        <img src={ contact_linkIn } alt="linkIn" className="information-contact-image" />
+                    </a> }
             </div>
         </div >
     </>
