@@ -5,13 +5,28 @@ import contact_mail from "../../images/contact_mail.png";
 import contact_line from "../../images/contact_line.png";
 import contact_linkIn from "../../images/contact_linkin.png";
 import logo_download from "../../images/logo_download.png";
+import axios from "axios"
 
 function Footer({ contactRef }) {
+
+    const handleDownloadFile = async () => {
+        fetch("Phrompong.pdf").then((response) => {
+            response.blob().then((blob) => {
+                const fileURL =
+                    window.URL.createObjectURL(blob);
+
+                let alink = document.createElement("a");
+                alink.href = fileURL;
+                alink.download = "Phrompong.pdf";
+                alink.click();
+            });
+        });
+    }
     return <>
         <div ref={ contactRef } className="footer" >
             <div className="footer-title">More about me?</div>
             <div className="footer-information">This is complete me, download my resume and find all about me.</div>
-            <button className="footer-button">
+            <button className="footer-button" onClick={ handleDownloadFile }>
                 <span className="footer-button-text"> Download Resume</span>
                 <img src={ logo_download } className="footer-button-image"></img>
             </button>

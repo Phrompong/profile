@@ -157,7 +157,7 @@ function Experience({ experienceRef, isDarkMode }) {
                                 <div className="experience-card-name-company">
                                     { companyName }
                                 </div>
-                                <div className="experience-card-period">{ period }</div>
+                                <div className={ isDarkMode ? "experience-card-period-dark-mode" : "experience-card-period" }>{ period }</div>
                                 <div className={ isDarkMode ? "experience-card-name-company-second-dark-mode" : "experience-card-name-company-second" }>{ companySub }</div>
                             </div>
 
