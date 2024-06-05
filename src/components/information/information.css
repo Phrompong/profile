@@ -235,6 +235,21 @@
 
 }
 
+.char {
+    cursor: pointer;
+}
+
+
+.char:hover {
+
+    background-image: url("../../images/water.webp");
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    -webkit-background-clip: text;
+    transform: scale(10);
+}
+
 .information-detail-dark-mode {
     color: #6C757D;
     font-weight: 400;

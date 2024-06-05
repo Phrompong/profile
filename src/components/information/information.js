@@ -14,6 +14,8 @@ import contact_linkIn_light_mode from "../../images/contact_linkin_light_mode.pn
 function Information({ informationRef, isDarkMode }) {
     const nickName = "<CHOPPER>";
 
+    const informationAbout = "5 years experience in programmer.The scope of work includes Software development,Software structure design, Database management,Software testing for errors and debugging,Review the program regularly and make adjustments as necessary to ensure that it is functioning properly in accordance with current business and integrate new functions into existing applications.";
+
     return <>
         {/* <div ref={ informationRef } ></div> */ }
         <div ref={ informationRef } className='information'>
@@ -31,7 +33,13 @@ function Information({ informationRef, isDarkMode }) {
                 </div>
                 <div className='information-position'>Full Stack  Developer</div>
                 <span className={ isDarkMode ? "information-detail-dark-mode" : "information-detail" }>
-                    5 years experience in programmer.
+
+                    {
+                        informationAbout.split("").map((o) => {
+                            return (<span className="char">{ o }</span>)
+                        })
+                    }
+                    {/* 5 years experience in programmer.
                     The scope of work includes Software development,
                     Software structure design, Database management,
                     Software testing for errors and debugging,
@@ -39,7 +47,7 @@ function Information({ informationRef, isDarkMode }) {
                     and make adjustments as necessary
                     to ensure that it is functioning properly in accordance
                     with current business
-                    and integrate new functions into existing applications.
+                    and integrate new functions into existing applications. */}
                 </span>
                 <div className="information-contact">
 
