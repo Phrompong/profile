@@ -1,4 +1,5 @@
 import "../information/information.css";
+import "../middle.css";
 import profile_image from '../../images/profile_image.png';
 import contact_tel from "../../images/contact_tel.png";
 import contact_mail from "../../images/contact_mail.png";
@@ -18,13 +19,13 @@ function Information({ informationRef, isDarkMode }) {
         <div ref={ informationRef } className='information'>
             <div className='information-left'>
                 {/* <div className='information-first-name'>PHROMPONG</div> */ }
-                <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-first-name" }>PHROMPONG</div>
+                <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-first-name water" }>PHROMPONG</div>
                 <div className='information-group-last-name-nick-name'>
                     {/* <div className='information-last-name'> */ }
-                    <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name" }>
+                    <div className={ isDarkMode ? "information-first-name-dark-mode" : "information-last-name water" }>
                         KHAGTES
                     </div>
-                    <div className={ isDarkMode ? "information-nick-name-dark-mode" : "information-nick-name" }>
+                    <div className={ isDarkMode ? "information-nick-name-dark-mode" : "information-nick-name water" }>
                         { nickName }
                     </div>
                 </div>
