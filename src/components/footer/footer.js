@@ -5,7 +5,6 @@ import contact_mail from "../../images/contact_mail.png";
 import contact_line from "../../images/contact_line.png";
 import contact_linkIn from "../../images/contact_linkin.png";
 import logo_download from "../../images/logo_download.png";
-import axios from "axios"
 
 function Footer({ contactRef }) {
 
