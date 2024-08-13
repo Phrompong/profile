@@ -79,6 +79,7 @@
 .container-information-project-name {
     font-weight: 700;
     color: #FFFFFF;
+    font-size: 1.5rem;
 }
 
 .container-information-project-name-dark-mode {
@@ -87,7 +88,9 @@
 }
 
 .container-information-description {
+    text-align: center;
     font-weight: 400;
+    font-size: 1rem;
 }
 
 .container-information-description-dark-mode {
