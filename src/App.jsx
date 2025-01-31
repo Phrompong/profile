@@ -40,7 +40,6 @@ function App() {
         experienceRef={experienceRef}
         isDarkMode={isDarkMode}
       ></Experience>
-      <MyProject isDarkMode={isDarkMode}></MyProject>
       <Footer contactRef={contactRef}></Footer>
     </div>
   );
