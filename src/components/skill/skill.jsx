@@ -15,6 +15,8 @@ import iconNode from "../../images/nodejs.svg";
 import iconNest from "../../images/nestjs.svg";
 import iconReact from "../../images/reactjs.svg";
 import iconAspNet from "../../images/aspnet.svg";
+import iconPostGreSql from "../../images/postgreSQL.svg";
+import iconNext from "../../images/next.svg";
 
 function Skill({ skillRef, isDarkMode }) {
   return (
@@ -44,6 +46,7 @@ function Skill({ skillRef, isDarkMode }) {
             <img className="img-program-db" src={iconMySql}></img>
             <img className="img-program-db" src={iconMongoDB}></img>
             <img className="img-program-db" src={iconOracle}></img>
+            <img className="img-program-db" src={iconPostGreSql}></img>
           </div>
         </div>
         <div className="framework">
@@ -54,6 +57,7 @@ function Skill({ skillRef, isDarkMode }) {
             <img className="img-program-db" src={iconNest}></img>
             <img className="img-program-db" src={iconReact}></img>
             <img className="img-program-db" src={iconAspNet}></img>
+            <img className="img-program-db" src={iconNext}></img>
           </div>
         </div>
       </div>
@@ -81,12 +85,14 @@ function Skill({ skillRef, isDarkMode }) {
           </div>
         </div>
         <div className="mobile-program-lang">
-          <span className="mobile-database-title">DATABASE</span>
+          <span className="mobile-database-title">DATABASExx</span>
           <div className="mobile-program-lang-icon">
             <img className="mobile-img-program-db" src={iconSqlDB}></img>
             <img className="mobile-img-program-db" src={iconMySql}></img>
             <img className="mobile-img-program-db" src={iconMongoDB}></img>
             <img className="mobile-img-program-db" src={iconOracle}></img>
+            <img className="mobile-img-program-db" src={iconOracle}></img>
+            <img className="mobile-img-program-db" src={iconPostGreSql}></img>
           </div>
         </div>
         <div className="mobile-framework">
