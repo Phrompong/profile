@@ -34,7 +34,7 @@ function App() {
         informationRef={informationRef}
         isDarkMode={isDarkMode}
       ></Information>
-      <Company></Company>
+      <Company isDarkMode={isDarkMode}></Company>
       <Skill skillRef={skillRef} isDarkMode={isDarkMode}></Skill>
       <Experience
         experienceRef={experienceRef}

@@ -16,7 +16,7 @@ function Experience({ experienceRef, isDarkMode }) {
     {
       logo: isDarkMode ? BedrockLightMode : BedrockLogo,
       companyName: "Bedrock Analytics",
-      period: "ระบุช่วงเวลา",
+      period: "Jul 2024 - Present",
       companySub: "",
       position: "Full Stack Developer",
       projects: [
@@ -24,14 +24,14 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "CDDP - Community Driven Development Project (GIS Platform for Local Government)",
           details: [
-            "Build full-stack GIS platform for local governments using NestJS, TypeORM, and PostgreSQL with PostGIS",
-            "Implement interactive map visualization with React 18, TypeScript, and Mapbox GL (50+ dynamic layers)",
-            "Design water management system with smart meter monitoring and DMA pipeline tracking",
-            "Integrate AWS services (S3, SQS, Kinesis Video Streams) for storage, async processing, and CCTV",
-            "Implement RBAC with SSO/JWT authentication and granular permissions",
-            "Build data export system with SQS queue processing and scheduled cron jobs",
-            "Manage frontend state with Zustand and TanStack React Query, styled with Ant Design and Tailwind CSS",
-            "Deploy with Docker on Kubernetes (Helm), CI/CD via GitLab, monitoring via Sentry",
+            { en: "Build full-stack GIS platform for local governments using NestJS, TypeORM, and PostgreSQL with PostGIS", th: "พัฒนาแพลตฟอร์ม GIS แบบ Full-stack สำหรับหน่วยงานท้องถิ่น ด้วย NestJS, TypeORM และ PostgreSQL ร่วมกับ PostGIS" },
+            { en: "Implement interactive map visualization with React 18, TypeScript, and Mapbox GL (50+ dynamic layers)", th: "พัฒนาระบบแผนที่แบบโต้ตอบด้วย React 18, TypeScript และ Mapbox GL (มากกว่า 50 เลเยอร์)" },
+            { en: "Design water management system with smart meter monitoring and DMA pipeline tracking", th: "ออกแบบระบบบริหารจัดการน้ำ พร้อมระบบติดตามมิเตอร์อัจฉริยะและท่อส่งน้ำ DMA" },
+            { en: "Integrate AWS services (S3, SQS, Kinesis Video Streams) for storage, async processing, and CCTV", th: "เชื่อมต่อบริการ AWS (S3, SQS, Kinesis Video Streams) สำหรับจัดเก็บข้อมูล, ประมวลผลแบบ Async และ CCTV" },
+            { en: "Implement RBAC with SSO/JWT authentication and granular permissions", th: "พัฒนาระบบ RBAC พร้อม SSO/JWT สำหรับยืนยันตัวตนและการกำหนดสิทธิ์แบบละเอียด" },
+            { en: "Build data export system with SQS queue processing and scheduled cron jobs", th: "พัฒนาระบบส่งออกข้อมูลด้วย SQS queue และ Cron Job ตามกำหนดเวลา" },
+            { en: "Manage frontend state with Zustand and TanStack React Query, styled with Ant Design and Tailwind CSS", th: "จัดการ State ด้วย Zustand และ TanStack React Query ตกแต่งด้วย Ant Design และ Tailwind CSS" },
+            { en: "Deploy with Docker on Kubernetes (Helm), CI/CD via GitLab, monitoring via Sentry", th: "Deploy ด้วย Docker บน Kubernetes (Helm), CI/CD ผ่าน GitLab, ติดตามข้อผิดพลาดผ่าน Sentry" },
           ],
         },
       ],
@@ -47,9 +47,9 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Sales system : Government Savings Bank",
           details: [
-            "Develop back-end microservices using Node.js, RabbitMQ, MongoDB, and SQL Server",
-            "Design RESTful API specifications and database schema",
-            "Implement sales pipeline features (lead tracking, target management, reporting)",
+            { en: "Develop back-end microservices using Node.js, RabbitMQ, MongoDB, and SQL Server", th: "พัฒนา Microservices ฝั่ง Back-end ด้วย Node.js, RabbitMQ, MongoDB และ SQL Server" },
+            { en: "Design RESTful API specifications and database schema", th: "ออกแบบ RESTful API และโครงสร้างฐานข้อมูล" },
+            { en: "Implement sales pipeline features (lead tracking, target management, reporting)", th: "พัฒนาระบบ Sales Pipeline (ติดตามลูกค้า, จัดการเป้าหมาย, รายงาน)" },
           ],
         },
       ],
@@ -65,10 +65,10 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "NEW POS : PTT Oil and Retail Business PCL (OR)",
           details: [
-            "Develop back-end microservices using Node.js, .NET, RabbitMQ, and Redis",
-            "Develop front-end POS interface using ReactJS",
-            "Design database schema and system workflow for POS operations",
-            "Write functional test scripts using Mocha and conduct code reviews",
+            { en: "Develop back-end microservices using Node.js, .NET, RabbitMQ, and Redis", th: "พัฒนา Microservices ฝั่ง Back-end ด้วย Node.js, .NET, RabbitMQ และ Redis" },
+            { en: "Develop front-end POS interface using ReactJS", th: "พัฒนาหน้า POS ฝั่ง Front-end ด้วย ReactJS" },
+            { en: "Design database schema and system workflow for POS operations", th: "ออกแบบโครงสร้างฐานข้อมูลและ Workflow ของระบบ POS" },
+            { en: "Write functional test scripts using Mocha and conduct code reviews", th: "เขียน Functional Test ด้วย Mocha และทำ Code Review" },
           ],
         },
       ],
@@ -83,9 +83,9 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Cigna anywhere : Cigna Insurance PCL",
           details: [
-            "Develop back-end RESTful API using ASP.NET",
-            "Design database schema and system workflow",
-            "Implement insurance policy and claim processing features",
+            { en: "Develop back-end RESTful API using ASP.NET", th: "พัฒนา RESTful API ฝั่ง Back-end ด้วย ASP.NET" },
+            { en: "Design database schema and system workflow", th: "ออกแบบโครงสร้างฐานข้อมูลและ Workflow ของระบบ" },
+            { en: "Implement insurance policy and claim processing features", th: "พัฒนาระบบจัดการกรมธรรม์และเคลมประกัน" },
           ],
         },
       ],
@@ -100,24 +100,24 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Inventory management system : Panasonic Thailand",
           details: [
-            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
-            "Implement inventory tracking (stock-in, stock-out, adjustment) with Crystal Report",
+            { en: "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures", th: "พัฒนาเว็บแอปแบบ Full-stack ด้วย ASP.NET, SQL Server และ Stored Procedures" },
+            { en: "Implement inventory tracking (stock-in, stock-out, adjustment) with Crystal Report", th: "พัฒนาระบบติดตามสินค้าคงคลัง (รับเข้า, เบิกออก, ปรับปรุง) พร้อมรายงาน Crystal Report" },
           ],
         },
         {
           id: 2,
           name: "Online request system : Yip In Tsoi Co., LTD.",
           details: [
-            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
-            "Implement request submission, approval workflow, and status tracking",
+            { en: "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures", th: "พัฒนาเว็บแอปแบบ Full-stack ด้วย ASP.NET, SQL Server และ Stored Procedures" },
+            { en: "Implement request submission, approval workflow, and status tracking", th: "พัฒนาระบบส่งคำขอ, Workflow อนุมัติ และติดตามสถานะ" },
           ],
         },
         {
           id: 3,
           name: "Product Line system : Teijin Polyester (Thailand) Limited.",
           details: [
-            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
-            "Implement production line monitoring and performance reporting",
+            { en: "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures", th: "พัฒนาเว็บแอปแบบ Full-stack ด้วย ASP.NET, SQL Server และ Stored Procedures" },
+            { en: "Implement production line monitoring and performance reporting", th: "พัฒนาระบบติดตามสายการผลิตและรายงานประสิทธิภาพ" },
           ],
         },
       ],
@@ -130,59 +130,67 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Schedule training management system : SEAC",
           details: [
-            "Develop back-end RESTful API using ASP.NET and MySQL",
-            "Implement course registration, seat availability tracking, and multi-trainer scheduling",
-            "Design database schema to support multi-course scheduling workflows",
+            { en: "Develop back-end RESTful API using ASP.NET and MySQL", th: "พัฒนา RESTful API ฝั่ง Back-end ด้วย ASP.NET และ MySQL" },
+            { en: "Implement course registration, seat availability tracking, and multi-trainer scheduling", th: "พัฒนาระบบลงทะเบียนคอร์ส, ตรวจสอบที่นั่ง และจัดตารางวิทยากร" },
+            { en: "Design database schema to support multi-course scheduling workflows", th: "ออกแบบโครงสร้างฐานข้อมูลสำหรับ Workflow การจัดตารางหลายคอร์ส" },
           ],
         },
         {
           id: 2,
           name: "CCTV : AI FiRST",
           details: [
-            "Develop front-end using Angular and back-end using ASP.NET with MySQL",
-            "Integrate AI-powered camera systems (Ashura, Yitu) for real-time video analytics",
-            "Implement face detection and recognition features for surveillance monitoring",
+            { en: "Develop front-end using Angular and back-end using ASP.NET with MySQL", th: "พัฒนา Front-end ด้วย Angular และ Back-end ด้วย ASP.NET กับ MySQL" },
+            { en: "Integrate AI-powered camera systems (Ashura, Yitu) for real-time video analytics", th: "เชื่อมต่อระบบกล้อง AI (Ashura, Yitu) สำหรับวิเคราะห์วิดีโอแบบเรียลไทม์" },
+            { en: "Implement face detection and recognition features for surveillance monitoring", th: "พัฒนาระบบตรวจจับและจดจำใบหน้าสำหรับระบบเฝ้าระวัง" },
           ],
         },
         {
           id: 3,
           name: "Smart city on cloud : AI FiRST",
           details: [
-            "Develop back-end services using Node.js and MySQL",
-            "Integrate cloud-based AI services (Clarify, Ashura) for smart city data processing",
-            "Implement APIs for IoT device data collection and real-time monitoring dashboard",
+            { en: "Develop back-end services using Node.js and MySQL", th: "พัฒนาบริการ Back-end ด้วย Node.js และ MySQL" },
+            { en: "Integrate cloud-based AI services (Clarify, Ashura) for smart city data processing", th: "เชื่อมต่อบริการ AI บนคลาวด์ (Clarify, Ashura) สำหรับประมวลผลข้อมูล Smart City" },
+            { en: "Implement APIs for IoT device data collection and real-time monitoring dashboard", th: "พัฒนา API สำหรับเก็บข้อมูล IoT และแดชบอร์ดติดตามแบบเรียลไทม์" },
           ],
         },
         {
           id: 4,
           name: "Electronic Right Offering : Asia wealth securities company limited",
           details: [
-            "Develop back-end RESTful API using Node.js and MongoDB",
-            "Develop front-end using ReactJS for electronic rights offering portal",
-            "Implement shareholder rights subscription workflow and transaction management",
+            { en: "Develop back-end RESTful API using Node.js and MongoDB", th: "พัฒนา RESTful API ฝั่ง Back-end ด้วย Node.js และ MongoDB" },
+            { en: "Develop front-end using ReactJS for electronic rights offering portal", th: "พัฒนา Front-end ด้วย ReactJS สำหรับระบบเสนอขายหุ้นอิเล็กทรอนิกส์" },
+            { en: "Implement shareholder rights subscription workflow and transaction management", th: "พัฒนา Workflow การจองสิทธิ์ผู้ถือหุ้นและจัดการธุรกรรม" },
           ],
         },
         {
           id: 5,
           name: "Shipper System : Gulf Energy Development Public Company Limited",
           details: [
-            "Develop back-end using NestJS with MySQL",
-            "Develop front-end using ReactJS for shipment management interface",
-            "Implement shipment tracking, delivery scheduling, and logistics reporting",
+            { en: "Develop back-end using NestJS with MySQL", th: "พัฒนา Back-end ด้วย NestJS กับ MySQL" },
+            { en: "Develop front-end using ReactJS for shipment management interface", th: "พัฒนา Front-end ด้วย ReactJS สำหรับระบบจัดการการขนส่ง" },
+            { en: "Implement shipment tracking, delivery scheduling, and logistics reporting", th: "พัฒนาระบบติดตามการขนส่ง, จัดตารางจัดส่ง และรายงานโลจิสติกส์" },
           ],
         },
         {
           id: 6,
           name: "Medilance : Healthcare Freelance Marketplace",
           details: [
-            "Develop mobile app using React Native, Expo, and TypeScript with Zustand for state management",
-            "Build interactive UI with React Native Paper, Bottom Sheet, and form handling with Formik/Yup",
-            "Implement Google Maps integration with location-based job search and GPS check-in features",
+            { en: "Develop mobile app using React Native, Expo, and TypeScript with Zustand for state management", th: "พัฒนาแอปมือถือด้วย React Native, Expo และ TypeScript พร้อม Zustand สำหรับจัดการ State" },
+            { en: "Build interactive UI with React Native Paper, Bottom Sheet, and form handling with Formik/Yup", th: "สร้าง UI แบบโต้ตอบด้วย React Native Paper, Bottom Sheet และจัดการฟอร์มด้วย Formik/Yup" },
+            { en: "Implement Google Maps integration with location-based job search and GPS check-in features", th: "เชื่อมต่อ Google Maps พร้อมระบบค้นหางานตามตำแหน่งและเช็คอินด้วย GPS" },
           ],
         },
       ],
     },
   ];
+
+  const handleMouseMove = (e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top + 15;
+    e.currentTarget.style.setProperty("--tooltip-x", `${x}px`);
+    e.currentTarget.style.setProperty("--tooltip-y", `${y}px`);
+  };
 
   return (
     <>
@@ -274,8 +282,10 @@ function Experience({ experienceRef, isDarkMode }) {
                                       ? "experience-card-third-project-name-detail-dark-mode"
                                       : "experience-card-third-project-name-detail"
                                   }
+                                  onMouseMove={handleMouseMove}
                                 >
-                                  {detail}
+                                  {detail.en}
+                                  <span className="detail-tooltip-text">{detail.th}</span>
                                 </li>
                               ))}
                             </div>
@@ -369,8 +379,10 @@ function Experience({ experienceRef, isDarkMode }) {
                                     ? "mobile-experience-card-third-project-name-detail-dark-mode"
                                     : "mobile-experience-card-third-project-name-detail"
                                 }
+                                onMouseMove={handleMouseMove}
                               >
-                                {detail}
+                                {detail.en}
+                                <span className="detail-tooltip-text">{detail.th}</span>
                               </li>
                             ))}
                           </div>

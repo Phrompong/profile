@@ -37,7 +37,7 @@ function Footer({ contactRef }) {
           <a href="tel:0952535792">
             <img src={contact_tel} alt="tel" className="footer-contact-image" />
           </a>
-          <a href="mailto:someone@example.com">
+          <a href="mailto:phrompong.kht@gmail.com">
             <img
               src={contact_mail}
               alt="mail"

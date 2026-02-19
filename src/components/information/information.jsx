@@ -92,7 +92,7 @@ function Information({ informationRef, isDarkMode }) {
             )}
 
             {isDarkMode ? (
-              <a href="mailto:someone@example.com">
+              <a href="mailto:phrompong.kht@gmail.com">
                 <img
                   src={contact_mail_light_mode}
                   alt="mail"
@@ -100,7 +100,7 @@ function Information({ informationRef, isDarkMode }) {
                 />
               </a>
             ) : (
-              <a href="mailto:someone@example.com">
+              <a href="mailto:phrompong.kht@gmail.com">
                 <img
                   src={contact_mail}
                   alt="mail"
@@ -217,7 +217,7 @@ function Information({ informationRef, isDarkMode }) {
           )}
 
           {isDarkMode ? (
-            <a href="mailto:someone@example.com">
+            <a href="mailto:phrompong.kht@gmail.com">
               <img
                 src={contact_mail_light_mode}
                 alt="mail"
@@ -225,7 +225,7 @@ function Information({ informationRef, isDarkMode }) {
               />
             </a>
           ) : (
-            <a href="mailto:someone@example.com">
+            <a href="mailto:phrompong.kht@gmail.com">
               <img
                 src={contact_mail}
                 alt="mail"
