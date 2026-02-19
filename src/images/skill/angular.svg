@@ -1,4 +1,6 @@
 <svg width="123" height="72" viewBox="0 0 123 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg x="49" y="3" width="25" height="25" viewBox="41.5 0 40 40">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M61.62 0L43 6.64L45.84 31.26L61.62 40L77.4 31.26L80.24 6.64L61.62 0ZM49.98 30.52L61.62 4.42L73.22 30.52H68.88L66.54 24.68H56.66L54.32 30.52H49.98ZM61.62 12.9L58.22 21.08H65.02L61.62 12.9Z" fill="#6C757D"/>
+</svg>
 <text x="61.5" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#6C757D">Angular</text>
 </svg>

@@ -3,48 +3,72 @@ import TNLogo from "../../images/logo_TN_experience.svg";
 import PTTLogo from "../../images/logo_PTT_experience.svg";
 import FusionLogo from "../../images/logo_Fusion_experience.svg";
 import CSILogo from "../../images/logo_CSI.svg";
+import BedrockLogo from "../../images/logo_bedrock.svg";
 
 import TNLogoLightMode from "../../images/logo_tn_light_mode.svg";
 import PttLogoLightMode from "../../images/logo_ptt_light_mode.svg";
 import FusionLightMode from "../../images/logo_fusion_light_mode.svg";
 import CsiLightMode from "../../images/logo_csi_light_mode.svg";
+import BedrockLightMode from "../../images/logo_bedrock_light_mode.svg";
 
 function Experience({ experienceRef, isDarkMode }) {
   const details = [
     {
+      logo: isDarkMode ? BedrockLightMode : BedrockLogo,
+      companyName: "Bedrock Analytics",
+      period: "ระบุช่วงเวลา",
+      companySub: "",
+      position: "Full Stack Developer",
+      projects: [
+        {
+          id: 1,
+          name: "CDDP - Community Driven Development Project (GIS Platform for Local Government)",
+          details: [
+            "Build full-stack GIS platform for local governments using NestJS, TypeORM, and PostgreSQL with PostGIS",
+            "Implement interactive map visualization with React 18, TypeScript, and Mapbox GL (50+ dynamic layers)",
+            "Design water management system with smart meter monitoring and DMA pipeline tracking",
+            "Integrate AWS services (S3, SQS, Kinesis Video Streams) for storage, async processing, and CCTV",
+            "Implement RBAC with SSO/JWT authentication and granular permissions",
+            "Build data export system with SQS queue processing and scheduled cron jobs",
+            "Manage frontend state with Zustand and TanStack React Query, styled with Ant Design and Tailwind CSS",
+            "Deploy with Docker on Kubernetes (Helm), CI/CD via GitLab, monitoring via Sentry",
+          ],
+        },
+      ],
+    },
+    {
       logo: isDarkMode ? TNLogoLightMode : TNLogo,
-      companyName: "Advanced Personnel and Solutions Co., Ltd.",
-      period: "Sep 2023 - Present",
-      companySub: "(Onsite TN Incorporation limited.)",
+      companyName: "TN Incorporation limited.",
+      period: "Sep 2023 - Jun 2024",
+      companySub: "",
       position: "Senior Full Stack Developer",
       projects: [
         {
           id: 1,
           name: "Sales system : Government Savings Bank",
           details: [
-            "Develop back-end using NodeJS, RabbitMQ, MongoDB, SQL",
-            "Design API backend and Database Structure",
-            "Agile Methodology",
+            "Develop back-end microservices using Node.js, RabbitMQ, MongoDB, and SQL Server",
+            "Design RESTful API specifications and database schema",
+            "Implement sales pipeline features (lead tracking, target management, reporting)",
           ],
         },
       ],
     },
     {
       logo: isDarkMode ? PttLogoLightMode : PTTLogo,
-      companyName: "Solution Link Co.Ltd.",
+      companyName: "PTT Digital Solutions Co.Ltd.",
       period: "Feb 2020 - Aug 2023",
-      companySub: "(Onsite PTT Digital Solutions Co.Ltd.)",
+      companySub: "",
       position: "Full Stack Developer",
       projects: [
         {
           id: 1,
           name: "NEW POS : PTT Oil and Retail Business PCL (OR)",
           details: [
-            "Develop back-end using NodeJS, RabbitMQ, Redis, .NET, MongoDB, SQL",
-            "Develop front-end using ReactJS",
-            "Design database and workflow",
-            "Review a team member's source code before submitting to merge request",
-            "Create script for functional test (Mocha)",
+            "Develop back-end microservices using Node.js, .NET, RabbitMQ, and Redis",
+            "Develop front-end POS interface using ReactJS",
+            "Design database schema and system workflow for POS operations",
+            "Write functional test scripts using Mocha and conduct code reviews",
           ],
         },
       ],
@@ -59,8 +83,9 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Cigna anywhere : Cigna Insurance PCL",
           details: [
-            "Develop back-end using .NET",
-            "Design database and workflow",
+            "Develop back-end RESTful API using ASP.NET",
+            "Design database schema and system workflow",
+            "Implement insurance policy and claim processing features",
           ],
         },
       ],
@@ -75,59 +100,84 @@ function Experience({ experienceRef, isDarkMode }) {
           id: 1,
           name: "Inventory management system : Panasonic Thailand",
           details: [
-            "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap",
+            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
+            "Implement inventory tracking (stock-in, stock-out, adjustment) with Crystal Report",
           ],
         },
         {
           id: 2,
           name: "Online request system : Yip In Tsoi Co., LTD.",
           details: [
-            "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap",
+            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
+            "Implement request submission, approval workflow, and status tracking",
           ],
         },
         {
           id: 3,
           name: "Product Line system : Teijin Polyester (Thailand) Limited.",
           details: [
-            "Develop back-end and front-end using .NET, SQL , Store Procedure, Crystal Report, Javascript , HTML, CSS, Bootstrap",
+            "Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures",
+            "Implement production line monitoring and performance reporting",
           ],
         },
       ],
     },
     {
       companyName: "OTHER",
-      // period: "Jun 2018 - Jun 2019",
       position: "Full Stack Developer",
       projects: [
         {
           id: 1,
           name: "Schedule training management system : SEAC",
-          details: ["Develop back-end using .NET, MySQL"],
+          details: [
+            "Develop back-end RESTful API using ASP.NET and MySQL",
+            "Implement course registration, seat availability tracking, and multi-trainer scheduling",
+            "Design database schema to support multi-course scheduling workflows",
+          ],
         },
         {
           id: 2,
           name: "CCTV : AI FiRST",
           details: [
-            "Develop back-end and front-end using Angular, .NET, MySQL, Ashura, Yitu",
+            "Develop front-end using Angular and back-end using ASP.NET with MySQL",
+            "Integrate AI-powered camera systems (Ashura, Yitu) for real-time video analytics",
+            "Implement face detection and recognition features for surveillance monitoring",
           ],
         },
         {
           id: 3,
           name: "Smart city on cloud : AI FiRST",
-          details: ["Develop back-end using NodeJS, MySQL, Clarify, Ashura"],
+          details: [
+            "Develop back-end services using Node.js and MySQL",
+            "Integrate cloud-based AI services (Clarify, Ashura) for smart city data processing",
+            "Implement APIs for IoT device data collection and real-time monitoring dashboard",
+          ],
         },
         {
           id: 4,
           name: "Electronic Right Offering : Asia wealth securities company limited",
           details: [
-            "Develop back-end and front-end using NodeJS, ReactJS, Mongo DB",
+            "Develop back-end RESTful API using Node.js and MongoDB",
+            "Develop front-end using ReactJS for electronic rights offering portal",
+            "Implement shareholder rights subscription workflow and transaction management",
           ],
         },
         {
           id: 5,
           name: "Shipper System : Gulf Energy Development Public Company Limited",
           details: [
-            "Develop back-end and front-end using NestJS, ReactJS, MySQL",
+            "Develop back-end using NestJS with MySQL",
+            "Develop front-end using ReactJS for shipment management interface",
+            "Implement shipment tracking, delivery scheduling, and logistics reporting",
+          ],
+        },
+        {
+          id: 6,
+          name: "Medilance : Healthcare Freelance Marketplace",
+          details: [
+            "Develop mobile app using React Native, Expo, and TypeScript with Zustand for state management",
+            "Build interactive UI with React Native Paper, Bottom Sheet, and form handling with Formik/Yup",
+            "Implement Google Maps integration with location-based job search and GPS check-in features",
           ],
         },
       ],

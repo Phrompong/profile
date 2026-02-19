@@ -15,7 +15,7 @@ function Information({ informationRef, isDarkMode }) {
   const nickName = "<CHOPPER>";
 
   const informationAbout =
-    "5 years experience in programmer.The scope of work includes Software development,Software structure design, Database management,Software testing for errors and debugging,Review the program regularly and make adjustments as necessary to ensure that it is functioning properly in accordance with current business and integrate new functions into existing applications.";
+    "A Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management. Skilled in software testing, debugging, and delivering reliable, high-quality applications. Experienced in maintaining systems and integrating new features into existing platforms to align with evolving business requirements.";
 
   return (
     <>
@@ -190,12 +190,12 @@ function Information({ informationRef, isDarkMode }) {
               : "information-mobile-detail"
           }
         >
-          5 years experience in programmer. The scope of work includes Software
-          development, Software structure design, Database management, Software
-          testing for errors and debugging, Review the program regularly and
-          make adjustments as necessary to ensure that it is functioning
-          properly in accordance with current business and integrate new
-          functions into existing applications.
+          A Full Stack Developer with over 7 years of experience in software
+          development, system architecture design, and database management.
+          Skilled in software testing, debugging, and delivering reliable,
+          high-quality applications. Experienced in maintaining systems and
+          integrating new features into existing platforms to align with
+          evolving business requirements.
         </span>
         <div className="information-mobile-contact">
           {isDarkMode ? (

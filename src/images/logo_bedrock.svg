@@ -1,0 +1,26 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="32" cy="32" r="32" fill="white"/>
+<circle cx="32" cy="32" r="22" fill="#1a6b5c"/>
+<g stroke="white" stroke-width="1.2" stroke-linejoin="round" fill="none">
+  <!-- Top triangle -->
+  <polygon points="32,13 21,26 43,26"/>
+  <!-- Upper-left face -->
+  <polygon points="21,26 16,36 32,30"/>
+  <!-- Upper-right face -->
+  <polygon points="43,26 48,36 32,30"/>
+  <!-- Upper center face -->
+  <polygon points="21,26 43,26 32,30"/>
+  <!-- Left face -->
+  <polygon points="16,36 22,46 32,40"/>
+  <!-- Right face -->
+  <polygon points="48,36 42,46 32,40"/>
+  <!-- Center face -->
+  <polygon points="16,36 48,36 32,40"/>
+  <!-- Lower-left face -->
+  <polygon points="22,46 32,52 32,40"/>
+  <!-- Lower-right face -->
+  <polygon points="42,46 32,52 32,40"/>
+  <!-- Bottom face -->
+  <polygon points="22,46 42,46 32,40"/>
+</g>
+</svg>

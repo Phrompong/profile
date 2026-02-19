@@ -41,13 +41,18 @@
 }
 
 .skill {
-    display: grid;
-    align-content: center;
-    align-self: center;
-    grid-template-columns: 50% 50%;
+    display: flex;
+    justify-content: center;
     color: white;
-    border: 2px;
     width: 100%;
+}
+
+.all-skills-icon {
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5vw;
 }
 
 .mobile-skill {
@@ -156,13 +161,18 @@
     }
 
     .mobile-skill {
-        display: grid;
-        align-content: center;
-        align-self: center;
-        grid-template-columns: 50% 50%;
+        display: flex;
+        justify-content: center;
         color: white;
-        border: 2px;
         width: 100%;
+    }
+
+    .mobile-all-skills-icon {
+        padding: 3%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2vw;
     }
 
     .mobile-program-lang {

@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phrompong Khagtes - Resume</title>
+  <style>
+    @page { size: A4; margin: 0; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      color: #333;
+      background: #fff;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      position: relative;
+      overflow: hidden;
+      background: #fff;
+      page-break-after: always;
+    }
+
+    /* ══ HEADER BANNER ══ */
+    .banner {
+      height: 90px;
+      background: linear-gradient(135deg, #0b2e5e 0%, #164a80 30%, #1a6e7a 70%, #1a8a7a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .banner::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(150,220,255,0.12) 1.5px, transparent 1.5px),
+        radial-gradient(circle, rgba(150,220,255,0.08) 1px, transparent 1px);
+      background-size: 40px 40px, 25px 25px;
+      background-position: 0 0, 12px 12px;
+    }
+
+    /* ══ NAME AREA (below banner, overlapping photo) ══ */
+    .name-area {
+      position: relative;
+      height: 120px;
+      padding-left: 200px;
+      padding-top: 10px;
+    }
+    .photo-frame {
+      position: absolute;
+      left: 30px;
+      top: -50px;
+      width: 140px;
+      height: 160px;
+      border-radius: 0 0 70px 70px;
+      overflow: hidden;
+      background: linear-gradient(180deg, #1a6e7a 0%, #0b2e5e 100%);
+      border: 4px solid #fff;
+      border-top: none;
+      z-index: 10;
+    }
+    .photo-frame .photo-inner {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgba(255,255,255,0.4);
+      font-size: 11px;
+    }
+    .name-area h1 {
+      font-size: 42px;
+      font-weight: 800;
+      color: #0b2e5e;
+      line-height: 1.05;
+      letter-spacing: 1px;
+    }
+    .name-area .nickname {
+      font-size: 15px;
+      font-weight: 600;
+      color: #0b2e5e;
+      margin-top: 4px;
+    }
+
+    /* ══ TWO-COL LAYOUT ══ */
+    .columns {
+      display: flex;
+      height: calc(297mm - 90px - 120px);
+    }
+
+    /* ── LEFT SIDEBAR ── */
+    .sidebar {
+      width: 200px;
+      background: #f3f5f7;
+      padding: 0 18px 20px 18px;
+      flex-shrink: 0;
+    }
+    .s-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0b2e5e;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .s-section { margin-bottom: 18px; }
+    .s-edu-item { font-size: 10px; color: #444; line-height: 1.6; margin-bottom: 4px; }
+    .s-edu-item .year { font-size: 10px; }
+    .s-edu-item .degree { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .s-edu-item .gpa { font-weight: 700; font-size: 10px; font-style: italic; }
+    .s-sub { font-weight: 700; font-size: 10px; color: #222; margin: 8px 0 4px 0; letter-spacing: 0.5px; }
+    .s-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 0 6px; }
+    .s-list { list-style: disc; padding-left: 15px; }
+    .s-list li { font-size: 10px; color: #444; margin-bottom: 2px; }
+
+    /* ── RIGHT CONTENT ── */
+    .right {
+      flex: 1;
+      padding: 0 22px 20px 26px;
+    }
+    .c-title {
+      font-size: 14px;
+      font-weight: 700;
+      color: #0b2e5e;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .c-section { margin-bottom: 14px; }
+    .profile-text { font-size: 10.5px; color: #444; line-height: 1.65; }
+
+    /* ── TIMELINE ── */
+    .tl { position: relative; padding-left: 20px; }
+    .tl::before {
+      content: '';
+      position: absolute;
+      left: 5px; top: 8px; bottom: 0;
+      width: 2px;
+      background: #a0aab4;
+    }
+    .tl-item { position: relative; margin-bottom: 12px; }
+    .tl-item::before {
+      content: '';
+      position: absolute;
+      left: -20px; top: 5px;
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      background: #0b2e5e;
+    }
+    .tl-period {
+      font-size: 13px;
+      font-weight: 700;
+      font-style: italic;
+      color: #0b2e5e;
+      margin-bottom: 1px;
+    }
+    .tl-pos { font-size: 11px; font-weight: 700; color: #222; }
+    .tl-company { font-size: 10px; color: #666; margin-bottom: 3px; }
+    .tl-proj {
+      font-size: 10px;
+      font-weight: 600;
+      color: #333;
+      text-decoration: underline;
+      margin-top: 3px;
+      margin-bottom: 2px;
+    }
+    .tl-details { padding-left: 14px; }
+    .tl-details li { font-size: 9.5px; color: #444; margin-bottom: 1px; line-height: 1.55; }
+
+    /* ══ PAGE 2 ══ */
+    .p2-body {
+      padding: 28px 32px;
+      flex: 1;
+    }
+    .p2-tl { position: relative; padding-left: 20px; }
+    .p2-tl::before {
+      content: '';
+      position: absolute;
+      left: 5px; top: 8px; bottom: 0;
+      width: 2px;
+      background: #a0aab4;
+    }
+
+    /* ── FOOTER ── */
+    .footer {
+      height: 120px;
+      background: linear-gradient(135deg, #0b2e5e 0%, #164a80 30%, #1a6e7a 70%, #1a8a7a 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .footer::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle, rgba(80,200,255,0.22) 3px, transparent 3px),
+        radial-gradient(circle, rgba(80,200,255,0.14) 2px, transparent 2px),
+        radial-gradient(circle, rgba(80,200,255,0.10) 1.5px, transparent 1.5px);
+      background-size: 50px 50px, 35px 35px, 22px 22px;
+      background-position: 0 0, 18px 18px, 8px 8px;
+    }
+
+    @media print {
+      body { background: #fff; }
+      .page { margin: 0; box-shadow: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════ PAGE 1 ═══════ -->
+<div class="page">
+  <div class="banner"></div>
+
+  <div class="name-area">
+    <div class="photo-frame">
+      <div class="photo-inner">[PHOTO]</div>
+    </div>
+    <h1>PHROMPONG<br>KHAGTES</h1>
+    <div class="nickname">[CHOPPER]</div>
+  </div>
+
+  <div class="columns">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+      <div class="s-section">
+        <div class="s-title">Education</div>
+        <div class="s-edu-item">
+          <div class="year">2014 – 2018</div>
+          <div class="degree">Bachelor Degree in<br>Software Engineering</div>
+          <div class="gpa">GPA 3.03</div>
+          <div>Burapha University</div>
+        </div>
+      </div>
+
+      <div class="s-section">
+        <div class="s-title">Skills</div>
+
+        <div class="s-sub">PROGRAMMING LANGUAGES</div>
+        <div class="s-cols">
+          <ul class="s-list">
+            <li>Typescript</li>
+            <li>Javascript</li>
+            <li>C#</li>
+            <li>SQL</li>
+          </ul>
+          <ul class="s-list">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>PHP</li>
+          </ul>
+        </div>
+
+        <div class="s-sub">FRAMEWORKS</div>
+        <div class="s-cols">
+          <ul class="s-list">
+            <li>Angular</li>
+            <li>NodeJS</li>
+            <li>NestJS</li>
+            <li>Next.js</li>
+          </ul>
+          <ul class="s-list">
+            <li>ReactJS</li>
+            <li>ASP.NET</li>
+            <li>React Native</li>
+          </ul>
+        </div>
+
+        <div class="s-sub">DATABASE</div>
+        <div class="s-cols">
+          <ul class="s-list">
+            <li>SQL Server</li>
+            <li>MySQL</li>
+            <li>PostgreSQL</li>
+          </ul>
+          <ul class="s-list">
+            <li>MongoDB</li>
+            <li>Oracle</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT CONTENT -->
+    <div class="right">
+      <div class="c-section">
+        <div class="c-title">Profile</div>
+        <div class="profile-text">
+          A Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management. Skilled in software testing, debugging, and delivering reliable, high-quality applications. Experienced in maintaining systems and integrating new features into existing platforms to align with evolving business requirements.
+        </div>
+      </div>
+
+      <div class="c-section">
+        <div class="c-title">Experience</div>
+        <div class="tl">
+
+          <!-- Bedrock -->
+          <div class="tl-item">
+            <div class="tl-period">Jun 2024 - Present</div>
+            <div class="tl-pos">Full Stack Developer</div>
+            <div class="tl-company">Bedrock Analytics</div>
+            <div class="tl-proj">CDDP - Community Driven Development Project (GIS Platform for Local Government)</div>
+            <ul class="tl-details">
+              <li>Build full-stack GIS platform for local governments using NestJS, TypeORM, and PostgreSQL with PostGIS</li>
+              <li>Implement interactive map visualization with React 18, TypeScript, and Mapbox GL (50+ dynamic layers)</li>
+              <li>Design water management system with smart meter monitoring and DMA pipeline tracking</li>
+              <li>Integrate AWS services (S3, SQS, Kinesis Video Streams) for storage, async processing, and CCTV</li>
+              <li>Implement RBAC with SSO/JWT authentication and granular permissions</li>
+              <li>Build data export system with SQS queue processing and scheduled cron jobs</li>
+              <li>Manage frontend state with Zustand and TanStack React Query, styled with Ant Design and Tailwind CSS</li>
+              <li>Deploy with Docker on Kubernetes (Helm), CI/CD via GitLab, monitoring via Sentry</li>
+            </ul>
+          </div>
+
+          <!-- TN -->
+          <div class="tl-item">
+            <div class="tl-period">Sep 2023 - Jun 2024</div>
+            <div class="tl-pos">Senior Full Stack Developer</div>
+            <div class="tl-company">TN Incorporation Limited.</div>
+            <div class="tl-proj">Sales system : Government Savings Bank</div>
+            <ul class="tl-details">
+              <li>Develop back-end microservices using Node.js, RabbitMQ, MongoDB, and SQL Server</li>
+              <li>Design RESTful API specifications and database schema</li>
+              <li>Implement sales pipeline features (lead tracking, target management, reporting)</li>
+            </ul>
+          </div>
+
+          <!-- PTT -->
+          <div class="tl-item">
+            <div class="tl-period">Feb 2020 - Aug 2023</div>
+            <div class="tl-pos">Full Stack Developer</div>
+            <div class="tl-company">PTT Digital Solutions Co.Ltd.</div>
+            <div class="tl-proj">NEW POS : PTT Oil and Retail Business PCL (OR)</div>
+            <ul class="tl-details">
+              <li>Develop back-end microservices using Node.js, .NET, RabbitMQ, and Redis</li>
+              <li>Develop front-end POS interface using ReactJS</li>
+              <li>Design database schema and system workflow for POS operations</li>
+              <li>Write functional test scripts using Mocha and conduct code reviews</li>
+            </ul>
+          </div>
+
+          <!-- Fusion -->
+          <div class="tl-item">
+            <div class="tl-period">Jul 2019 - Jan 2020</div>
+            <div class="tl-pos">Programmer</div>
+            <div class="tl-company">Fusion Solution Co.,Ltd.</div>
+            <div class="tl-proj">Cigna anywhere : Cigna Insurance PCL</div>
+            <ul class="tl-details">
+              <li>Develop back-end RESTful API using ASP.NET</li>
+              <li>Design database schema and system workflow</li>
+              <li>Implement insurance policy and claim processing features</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ PAGE 2 ═══════ -->
+<div class="page" style="display:flex; flex-direction:column;">
+  <div class="p2-body">
+
+    <div class="p2-tl">
+      <!-- CSI -->
+      <div class="tl-item">
+        <div class="tl-period">Jun 2018 - Jun 2019</div>
+        <div class="tl-pos">System Programmer</div>
+        <div class="tl-company">C.S.I. GROUP</div>
+
+        <div class="tl-proj">Inventory management system : Panasonic Thailand</div>
+        <ul class="tl-details">
+          <li>Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures</li>
+          <li>Implement inventory tracking (stock-in, stock-out, adjustment) with Crystal Report</li>
+        </ul>
+
+        <div class="tl-proj">Online request system : Yip In Tsoi Co., LTD.</div>
+        <ul class="tl-details">
+          <li>Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures</li>
+          <li>Implement request submission, approval workflow, and status tracking</li>
+        </ul>
+
+        <div class="tl-proj">Product Line system : Teijin Polyester (Thailand) Limited.</div>
+        <ul class="tl-details">
+          <li>Develop full-stack web app using ASP.NET, SQL Server, and Stored Procedures</li>
+          <li>Implement production line monitoring and performance reporting</li>
+        </ul>
+      </div>
+
+      <!-- OTHER -->
+      <div class="tl-item">
+        <div class="tl-period" style="font-style:normal; font-size:14px; letter-spacing:1px;">OTHER</div>
+
+        <div class="tl-proj">Schedule training management system : SEAC</div>
+        <ul class="tl-details">
+          <li>Develop back-end RESTful API using ASP.NET and MySQL</li>
+          <li>Implement course registration, seat availability tracking, and multi-trainer scheduling</li>
+          <li>Design database schema to support multi-course scheduling workflows</li>
+        </ul>
+
+        <div class="tl-proj">CCTV : AI FiRST</div>
+        <ul class="tl-details">
+          <li>Develop front-end using Angular and back-end using ASP.NET with MySQL</li>
+          <li>Integrate AI-powered camera systems (Ashura, Yitu) for real-time video analytics</li>
+          <li>Implement face detection and recognition features for surveillance monitoring</li>
+        </ul>
+
+        <div class="tl-proj">Smart city on cloud : AI FiRST</div>
+        <ul class="tl-details">
+          <li>Develop back-end services using Node.js and MySQL</li>
+          <li>Integrate cloud-based AI services (Clarify, Ashura) for smart city data processing</li>
+          <li>Implement APIs for IoT device data collection and real-time monitoring dashboard</li>
+        </ul>
+
+        <div class="tl-proj">Electronic Right Offering : Asia wealth securities company limited</div>
+        <ul class="tl-details">
+          <li>Develop back-end RESTful API using Node.js and MongoDB</li>
+          <li>Develop front-end using ReactJS for electronic rights offering portal</li>
+          <li>Implement shareholder rights subscription workflow and transaction management</li>
+        </ul>
+
+        <div class="tl-proj">Shipper System : Gulf Energy Development Public Company Limited</div>
+        <ul class="tl-details">
+          <li>Develop back-end using NestJS with MySQL</li>
+          <li>Develop front-end using ReactJS for shipment management interface</li>
+          <li>Implement shipment tracking, delivery scheduling, and logistics reporting</li>
+        </ul>
+
+        <div class="tl-proj">Medilance : Healthcare Freelance Marketplace</div>
+        <ul class="tl-details">
+          <li>Develop mobile app using React Native, Expo, and TypeScript with Zustand for state management</li>
+          <li>Build interactive UI with React Native Paper, Bottom Sheet, and form handling with Formik/Yup</li>
+          <li>Implement Google Maps integration with location-based job search and GPS check-in features</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+  <div class="footer"></div>
+</div>
+
+</body>
+</html>

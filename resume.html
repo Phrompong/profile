@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phrompong Khagtes - Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      font-size: 11px;
+      color: #2d2d2d;
+      background: #f0f0f0;
+      line-height: 1.5;
+    }
+
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      margin: 20px auto;
+      background: #fff;
+      padding: 14mm 14mm 12mm 14mm;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    /* ── HEADER ── */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      border-bottom: 2px solid #2d2d2d;
+      padding-bottom: 10px;
+      margin-bottom: 12px;
+    }
+
+    .header-left h1 {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #1a1a1a;
+    }
+
+    .header-left .position {
+      font-size: 13px;
+      color: #555;
+      margin-top: 2px;
+      font-weight: 500;
+    }
+
+    .header-right {
+      text-align: right;
+      font-size: 10.5px;
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .header-right a {
+      color: #444;
+      text-decoration: none;
+    }
+
+    /* ── SECTION ── */
+    .section {
+      margin-bottom: 12px;
+    }
+
+    .section-title {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 3px;
+      margin-bottom: 8px;
+    }
+
+    /* ── SUMMARY ── */
+    .summary p {
+      color: #444;
+      font-size: 10.5px;
+    }
+
+    /* ── SKILLS ── */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px 16px;
+    }
+
+    .skill-group-label {
+      font-weight: 700;
+      color: #333;
+      font-size: 10px;
+      min-width: 90px;
+    }
+
+    .skill-group {
+      display: flex;
+      align-items: baseline;
+      gap: 5px;
+      font-size: 10.5px;
+    }
+
+    .skill-group-values {
+      color: #555;
+    }
+
+    /* ── EXPERIENCE ── */
+    .exp-item {
+      margin-bottom: 10px;
+    }
+
+    .exp-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+
+    .exp-company {
+      font-weight: 700;
+      font-size: 11px;
+      color: #1a1a1a;
+    }
+
+    .exp-period {
+      font-size: 10px;
+      color: #666;
+      white-space: nowrap;
+    }
+
+    .exp-sub {
+      font-size: 10px;
+      color: #666;
+      margin-top: 1px;
+    }
+
+    .exp-position {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #333;
+      margin-top: 2px;
+    }
+
+    .project-name {
+      font-size: 10.5px;
+      font-weight: 600;
+      color: #444;
+      margin-top: 5px;
+      margin-bottom: 2px;
+    }
+
+    .project-details {
+      padding-left: 14px;
+    }
+
+    .project-details li {
+      font-size: 10px;
+      color: #555;
+      margin-bottom: 1px;
+    }
+
+    /* ── FREELANCE / SIDE PROJECTS ── */
+    .other-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 6px 16px;
+    }
+
+    .other-item-name {
+      font-weight: 600;
+      font-size: 10.5px;
+      color: #333;
+    }
+
+    .other-item-client {
+      font-size: 10px;
+      color: #666;
+    }
+
+    /* ── PERSONAL PROJECT ── */
+    .side-project {
+      display: flex;
+      gap: 8px;
+      align-items: baseline;
+    }
+
+    .side-project-name {
+      font-weight: 700;
+      font-size: 10.5px;
+      color: #333;
+      min-width: 120px;
+    }
+
+    .side-project-desc {
+      font-size: 10px;
+      color: #555;
+    }
+
+    .side-project-link {
+      font-size: 10px;
+      color: #555;
+      text-decoration: none;
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+        padding: 12mm 14mm 10mm 14mm;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-left">
+        <h1>PHROMPONG KHAGTES</h1>
+        <div class="position">Full Stack Developer &nbsp;|&nbsp; &lt;CHOPPER&gt;</div>
+      </div>
+      <div class="header-right">
+        <div>📞 095-253-5792</div>
+        <div>💬 <a href="https://line.me/ti/p/R12teBUknT">Line: @chopper</a></div>
+        <div>🔗 <a href="https://www.linkedin.com/in/phrompong-khagtes-115957188">linkedin.com/in/phrompong-khagtes</a></div>
+      </div>
+    </div>
+
+    <!-- SUMMARY -->
+    <div class="section summary">
+      <div class="section-title">Summary</div>
+      <p>
+        A Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management.
+        Skilled in software testing, debugging, and delivering reliable, high-quality applications.
+        Experienced in maintaining systems and integrating new features into existing platforms to align with evolving business requirements.
+      </p>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="section-title">Technical Skills</div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <span class="skill-group-label">Languages</span>
+          <span class="skill-group-values">TypeScript, JavaScript, C#, PHP</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Databases</span>
+          <span class="skill-group-values">SQL Server, MySQL, MongoDB, PostgreSQL, Oracle</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Back-End</span>
+          <span class="skill-group-values">Node.js, NestJS, ASP.NET, Express</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Front-End</span>
+          <span class="skill-group-values">ReactJS, Next.js, Angular, React Native</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Messaging / Cache</span>
+          <span class="skill-group-values">RabbitMQ, Redis</span>
+        </div>
+        <div class="skill-group">
+          <span class="skill-group-label">Tools &amp; Others</span>
+          <span class="skill-group-values">Git, Tailwind CSS, Ant Design, Chart.js, Jest, Mocha, Mapbox GL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <div class="section">
+      <div class="section-title">Experience</div>
+
+      <!-- TN -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Advanced Personnel and Solutions Co., Ltd.</span>
+          <span class="exp-period">Sep 2023 – Jun 2024</span>
+        </div>
+        <div class="exp-sub">(Onsite: TN Incorporation Limited.)</div>
+        <div class="exp-position">Senior Full Stack Developer</div>
+        <div class="project-name">▸ Sales System — Government Savings Bank</div>
+        <ul class="project-details">
+          <li>Developed back-end microservices using Node.js, RabbitMQ (message broker), MongoDB, and SQL Server</li>
+          <li>Designed and documented RESTful API specifications and database schema</li>
+          <li>Implemented sales pipeline features including lead tracking, target management, and performance reporting</li>
+          <li>Collaborated with stakeholders using Agile (Scrum) methodology</li>
+        </ul>
+      </div>
+
+      <!-- PTT -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Solution Link Co., Ltd.</span>
+          <span class="exp-period">Feb 2020 – Aug 2023</span>
+        </div>
+        <div class="exp-sub">(Onsite: PTT Digital Solutions Co., Ltd.)</div>
+        <div class="exp-position">Full Stack Developer</div>
+        <div class="project-name">▸ NEW POS — PTT Oil and Retail Business PCL (OR)</div>
+        <ul class="project-details">
+          <li>Developed back-end microservices using Node.js, .NET, RabbitMQ (message broker), and Redis (caching)</li>
+          <li>Developed front-end using ReactJS for POS interface</li>
+          <li>Designed database schema and system workflow for point-of-sale operations</li>
+          <li>Wrote and maintained functional test scripts using Mocha to ensure system reliability</li>
+          <li>Reviewed team members' source code and provided feedback before merge requests</li>
+          <li>Collaborated with business analysts and QA teams in an Agile environment</li>
+        </ul>
+      </div>
+
+      <!-- Fusion -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">Fusion Solution Co., Ltd.</span>
+          <span class="exp-period">Jul 2019 – Jan 2020</span>
+        </div>
+        <div class="exp-position">Programmer</div>
+        <div class="project-name">▸ Cigna Anywhere — Cigna Insurance PCL</div>
+        <ul class="project-details">
+          <li>Developed back-end RESTful API using ASP.NET</li>
+          <li>Designed database schema and system workflow</li>
+          <li>Implemented insurance policy and claim processing features</li>
+          <li>Collaborated with cross-functional teams to gather and analyze requirements</li>
+        </ul>
+      </div>
+
+      <!-- CSI -->
+      <div class="exp-item">
+        <div class="exp-header">
+          <span class="exp-company">C.S.I. GROUP</span>
+          <span class="exp-period">Jun 2018 – Jun 2019</span>
+        </div>
+        <div class="exp-position">System Programmer</div>
+        <div class="project-name">▸ Inventory Management System — Panasonic Thailand</div>
+        <ul class="project-details">
+          <li>Developed full-stack web application using ASP.NET, SQL Server, and Stored Procedures</li>
+          <li>Implemented inventory tracking features including stock-in, stock-out, and stock adjustment</li>
+          <li>Generated inventory reports using Crystal Report; designed responsive UI with JavaScript, HTML, CSS, Bootstrap</li>
+        </ul>
+        <div class="project-name">▸ Online Request System — Yip In Tsoi Co., Ltd. &nbsp;|&nbsp; Product Line System — Teijin Polyester (Thailand) Ltd.</div>
+        <ul class="project-details">
+          <li>Developed full-stack web applications using ASP.NET, SQL Server; implemented request/approval workflows and production line monitoring</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- FREELANCE PROJECTS -->
+    <div class="section">
+      <div class="section-title">Other Projects (Freelance)</div>
+      <div class="other-grid">
+        <div>
+          <div class="other-item-name">Schedule Training Management System</div>
+          <div class="other-item-client">SEAC — ASP.NET, MySQL</div>
+        </div>
+        <div>
+          <div class="other-item-name">Electronic Right Offering</div>
+          <div class="other-item-client">Asia Wealth Securities — Node.js, MongoDB, ReactJS</div>
+        </div>
+        <div>
+          <div class="other-item-name">CCTV &amp; Smart City on Cloud</div>
+          <div class="other-item-client">AI FiRST — Angular, ASP.NET, Node.js, AI Integration</div>
+        </div>
+        <div>
+          <div class="other-item-name">Shipper System</div>
+          <div class="other-item-client">Gulf Energy Development PCL — NestJS, MySQL, ReactJS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PERSONAL PROJECT -->
+    <div class="section">
+      <div class="section-title">Personal Project</div>
+      <div class="side-project">
+        <span class="side-project-name">JAEW TRANSLATE</span>
+        <span class="side-project-desc">
+          A tool that converts mistyped English-keyboard messages into Thai. &nbsp;
+          <a class="side-project-link" href="https://jaewtranslate.com/">jaewtranslate.com</a>
+        </span>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

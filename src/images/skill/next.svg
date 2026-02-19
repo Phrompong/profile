@@ -1,11 +1,11 @@
-<svg width="124" height="72" viewBox="0 0 124 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<mask id="mask0_1_1207" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="45" y="2" width="37" height="36">
-<rect x="45" y="2" width="37" height="36" fill="url(#pattern0_1_1207)"/>
+<svg width="123" height="72" viewBox="0 0 123 72" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<mask id="mask0_1_1207" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="49" y="3" width="25" height="25">
+<rect x="49" y="3" width="25" height="25" fill="url(#pattern0_1_1207)"/>
 </mask>
 <g mask="url(#mask0_1_1207)">
-<rect x="44.0513" y="1.30518" width="37.9487" height="37.8996" fill="#6C757D"/>
+<rect x="49" y="3" width="25" height="25" fill="#6C757D"/>
 </g>
-<text x="62" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#6C757D">NextJS</text>
+<text x="61.5" y="67" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" font-weight="400" fill="#6C757D">NextJS</text>
 <defs>
 <pattern id="pattern0_1_1207" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_1_1207" transform="matrix(0.000488281 0 0 0.000490167 0 -0.0019305)"/>
