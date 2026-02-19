@@ -7,13 +7,13 @@ import logo_download from "../../images/logo_download.svg";
 
 function Footer({ contactRef }) {
   const handleDownloadFile = async () => {
-    fetch("Phrompong.pdf").then((response) => {
+    fetch("Chopper Resume (Developer)-4.pdf").then((response) => {
       response.blob().then((blob) => {
         const fileURL = window.URL.createObjectURL(blob);
 
         let alink = document.createElement("a");
         alink.href = fileURL;
-        alink.download = "Phrompong.pdf";
+        alink.download = "Phrompong Resume.pdf";
         alink.click();
       });
     });

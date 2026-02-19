@@ -22,7 +22,7 @@ function Experience({ experienceRef, isDarkMode }) {
       projects: [
         {
           id: 1,
-          name: "CDDP - Community Driven Development Project (GIS Platform for Local Government)",
+          name: "CDDP - City Digital Data Platform",
           details: [
             { en: "Build water management system (loss analysis, smart meters, DMA, valves, pressure, flow meters) with Mapbox GL map layers and filter hooks", th: "พัฒนาระบบจัดการน้ำ (วิเคราะห์น้ำสูญเสีย, มิเตอร์อัจฉริยะ, DMA, วาล์ว, แรงดัน, มิเตอร์วัดอัตราการไหล) พร้อม Mapbox GL map layers และ filter hooks" },
             { en: "Develop veterinary module end-to-end — pet registration, vaccine tracking, stray animal management with map integration and S3 image upload", th: "พัฒนาระบบสัตวแพทย์แบบครบวงจร — ลงทะเบียนสัตว์เลี้ยง, ติดตามวัคซีน, จัดการสัตว์จรจัดพร้อมแผนที่และอัปโหลดรูปผ่าน S3" },
