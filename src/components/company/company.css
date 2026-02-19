@@ -22,3 +22,19 @@
     border-left: 1px solid #6C757D;
     height: 6vw;
 }
+
+@media only screen and (max-width: 480px) {
+    .company {
+        flex-wrap: wrap;
+        padding: 5% 8%;
+        gap: 3vw;
+    }
+
+    .company-image {
+        width: 28vw;
+    }
+
+    .company-vertical-line {
+        display: none;
+    }
+}
