@@ -23,6 +23,21 @@
     height: 6vw;
 }
 
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .company {
+        gap: 3%;
+        padding: 3% 2%;
+    }
+
+    .company-image {
+        width: 12vw;
+    }
+
+    .company-vertical-line {
+        height: 4vw;
+    }
+}
+
 @media only screen and (max-width: 480px) {
     .company {
         flex-wrap: wrap;
