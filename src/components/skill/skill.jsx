@@ -27,6 +27,7 @@ import iconJest from "../../images/skill/jest.svg";
 import iconMocha from "../../images/skill/mocha.svg";
 import iconRedis from "../../images/skill/redis.svg";
 import iconRabbitMQ from "../../images/skill/rabbitmq.svg";
+import iconDocker from "../../images/skill/docker.svg";
 
 function Skill({ skillRef, isDarkMode }) {
   return (
@@ -66,6 +67,7 @@ function Skill({ skillRef, isDarkMode }) {
           <img className="img-program-db" src={iconMocha}></img>
           <img className="img-program-db" src={iconRedis}></img>
           <img className="img-program-db" src={iconRabbitMQ}></img>
+          <img className="img-program-db" src={iconDocker}></img>
         </div>
       </div>
 
@@ -106,6 +108,7 @@ function Skill({ skillRef, isDarkMode }) {
           <img className="mobile-img-program-db" src={iconMocha}></img>
           <img className="mobile-img-program-db" src={iconRedis}></img>
           <img className="mobile-img-program-db" src={iconRabbitMQ}></img>
+          <img className="mobile-img-program-db" src={iconDocker}></img>
         </div>
       </div>
     </div>
