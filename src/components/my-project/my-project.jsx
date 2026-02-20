@@ -1,6 +1,6 @@
 import "../my-project/my-project.css";
-import jaew_logo from "../../images/jaew_logo.svg";
-import icon_view_site from "../../images/icon_view_site.svg";
+import jaew_logo from "../../images/project/jaew_logo.svg";
+import icon_view_site from "../../images/project/icon_view_site.svg";
 
 function MyProject({ isDarkMode }) {
   return (

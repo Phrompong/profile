@@ -150,14 +150,6 @@
 }
 
 
-.information-first-name-dark-mode {
-    font-weight: 700;
-    font-size: 6vw;
-    background: linear-gradient(#000000, #6C757D);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-}
-
 .information-group-last-name-nick-name {
     display: flex;
     padding: 0;
@@ -211,15 +203,6 @@
 
 }
 
-.information-nick-name:hover {
-    /* content: url('../../images/giphy.gif');
-    width: 25%; */
-}
-
-/* .information-nick-name:hover {
-    opacity: 1;
-  } */
-
 .information-position {
     color: #007AFF;
     font-weight: 700;
@@ -242,7 +225,7 @@
 
 .char:hover {
 
-    background-image: url("../../images/water.webp");
+    background-image: url("../../images/effect/water.webp");
     background-position: center;
     background-size: cover;
     color: transparent;
@@ -281,7 +264,3 @@
 
 
 
-.information-contact {
-    display: flex;
-    justify-content: flex-start;
-}

@@ -1,15 +1,15 @@
 import "../experiences/experience.css";
-import TNLogo from "../../images/logo_TN_experience.svg";
-import PTTLogo from "../../images/logo_PTT_experience.svg";
-import FusionLogo from "../../images/logo_Fusion_experience.svg";
-import CSILogo from "../../images/logo_CSI.svg";
-import BedrockLogo from "../../images/logo_bedrock.svg";
+import TNLogo from "../../images/experience/logo_TN_experience.svg";
+import PTTLogo from "../../images/experience/logo_PTT_experience.svg";
+import FusionLogo from "../../images/experience/logo_Fusion_experience.svg";
+import CSILogo from "../../images/experience/logo_CSI.svg";
+import BedrockLogo from "../../images/experience/logo_bedrock.svg";
 
-import TNLogoLightMode from "../../images/logo_tn_light_mode.svg";
-import PttLogoLightMode from "../../images/logo_ptt_light_mode.svg";
-import FusionLightMode from "../../images/logo_fusion_light_mode.svg";
-import CsiLightMode from "../../images/logo_csi_light_mode.svg";
-import BedrockLightMode from "../../images/logo_bedrock_light_mode.svg";
+import TNLogoLightMode from "../../images/experience/logo_tn_light_mode.svg";
+import PttLogoLightMode from "../../images/experience/logo_ptt_light_mode.svg";
+import FusionLightMode from "../../images/experience/logo_fusion_light_mode.svg";
+import CsiLightMode from "../../images/experience/logo_csi_light_mode.svg";
+import BedrockLightMode from "../../images/experience/logo_bedrock_light_mode.svg";
 
 function Experience({ experienceRef, isDarkMode }) {
   const details = [
@@ -206,8 +206,7 @@ function Experience({ experienceRef, isDarkMode }) {
           {details &&
             details.map(
               (
-                { logo, companyName, period, companySub, position, projects },
-                index
+                { logo, companyName, period, companySub, position, projects }
               ) => {
                 return (
                   <div
@@ -263,7 +262,7 @@ function Experience({ experienceRef, isDarkMode }) {
 
                     <div className="experience-card-third">
                       {projects &&
-                        projects.map(({ id, name, details }, index) => (
+                        projects.map(({ name, details }, index) => (
                           <div
                             key={index}
                             className={

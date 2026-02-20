@@ -1,10 +1,10 @@
 import "../company/company.css";
-import logoCSI from "../../images/Logo_CSIGROUP.svg";
-import logoFusion from "../../images/fusionsol_logo.svg";
-import logoPtt from "../../images/logo_ptt.svg";
-import logoTN from "../../images/logo_TN.svg";
-import logoBedrock from "../../images/logo_bedrock_company.svg";
-import logoBedrockDark from "../../images/logo_bedrock_company_dark.svg";
+import logoCSI from "../../images/company/Logo_CSIGROUP.svg";
+import logoFusion from "../../images/company/fusionsol_logo.svg";
+import logoPtt from "../../images/company/logo_ptt.svg";
+import logoTN from "../../images/company/logo_TN.svg";
+import logoBedrock from "../../images/company/logo_bedrock_company.svg";
+import logoBedrockDark from "../../images/company/logo_bedrock_company_dark.svg";
 
 function Company({ isDarkMode }) {
   return (

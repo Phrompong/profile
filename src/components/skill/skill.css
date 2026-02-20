@@ -12,10 +12,6 @@
     transform: scale(1.03);
 }
 
-.img-framework {
-    width: 9vw;
-}
-
 .skill-topic {
     display: flex;
     justify-content: center;
@@ -59,61 +55,12 @@
     display: none;
 }
 
-.program-lang {
-    color: white;
-}
-
 .mobile-skill-topic-dark-mode {
     display: none;
 }
 
 .mobile-skill-topic {
     display: none;
-}
-
-.program-lang-title {
-    display: flex;
-    justify-content: center;
-    color: #007AFF;
-    align-items: center;
-    font-size: 2vw;
-}
-
-.program-lang-icon {
-    padding: 3%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.database-title {
-    display: flex;
-    justify-content: center;
-    color: #007AFF;
-    align-items: center;
-    font-size: 2vw;
-}
-
-.framework {
-    grid-column: 1 / span 2;
-    /* border-style: dotted; */
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    flex-direction: column;
-}
-
-.framework-title {
-    display: flex;
-    justify-content: center;
-    color: #007AFF;
-    align-items: center;
-    font-size: 2vw;
-}
-
-.framework-lang-icon {
-    padding: 3%;
-    display: flex;
-    justify-content: center;
 }
 
 @media only screen and (max-width: 480px) {
@@ -132,10 +79,6 @@
 
     .mobile-img-program-db {
         width: 18vw;
-    }
-
-    .mobile-img-framework {
-        width: 9vw;
     }
 
     .mobile-skill-topic {
@@ -175,55 +118,4 @@
         gap: 2vw;
     }
 
-    .mobile-program-lang {
-        color: white;
-        /* border-style: dotted; */
-    }
-
-    .mobile-program-lang-title {
-        display: flex;
-        justify-content: center;
-        color: #007AFF;
-        align-items: center;
-        font-size: 2.5vw;
-    }
-
-    .mobile-program-lang-icon {
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 2vw;
-    }
-
-    .mobile-database-title {
-        display: flex;
-        justify-content: center;
-        color: #007AFF;
-        align-items: center;
-        font-size: 2.5vw;
-    }
-
-    .mobile-framework {
-        grid-column: 1 / span 2;
-        /* border-style: dotted; */
-        display: flex;
-        justify-content: center;
-        margin-top: 2%;
-        flex-direction: column;
-    }
-
-    .mobile-framework-title {
-        display: flex;
-        justify-content: center;
-        color: #007AFF;
-        align-items: center;
-        font-size: 2.5vw;
-    }
-
-    .mobile-framework-lang-icon {
-        padding: 3%;
-        display: flex;
-        justify-content: center;
-    }
 }

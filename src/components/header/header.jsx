@@ -1,7 +1,5 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 import "../header/header.css";
-import hamburger from "../../images/hamburger.png";
-import close from "../../images/close.png";
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { styled } from '@mui/material/styles';
 import Switch from '@mui/material/Switch';
@@ -64,7 +62,6 @@ function Header({
         },
     }));
     const [open, setOpen] = useState(false);
-    const [darkMode, setDarkMode] = useState(true);
     const headers = [
         "Home",
         "Skills",
@@ -93,9 +90,8 @@ function Header({
         }
     };
 
-    const handleChange = (e) => {
+    const handleChange = () => {
         handleDarkMode();
-        setDarkMode(!darkMode);
     }
 
     return (
@@ -108,7 +104,7 @@ function Header({
                     )) }
                 </span>
                 <FormControlLabel
-                    control={ <MaterialUISwitch sx={ { m: 1 } } onChange={ handleChange } checked={ darkMode } /> }
+                    control={ <MaterialUISwitch sx={ { m: 1 } } onChange={ handleChange } checked={ isDarkMode } /> }
                 />
             </div>
             {/* Header Mobile */ }
@@ -119,20 +115,10 @@ function Header({
                         <MenuIcon className='header-image-burger' onClick={ () => { setOpen(!open) } }></MenuIcon>
                 }
 
-                {/* <img
-                    onClick={ () => { setOpen(!open) } }
-                    className='header-image-burger'
-                    src={ hamburger }
-                    alt=""></img> */}
-
                 <div className={ isDarkMode ? `header-menu${ open ? '-open-dark-mode' : '' }` : `header-menu${ open ? '-open' : '' }` }>
                     <div className="header-menu-container">
                         <div className="header-group-top">
-                            { isDarkMode
-                                ? <CloseIcon onClick={ () => { setOpen(!open) } } className="header-menu-image-icon-close" sx={ { fontSize: "7vw" } } ></CloseIcon>
-                                : <img onClick={ () => { setOpen(!open) } }
-                                    className="header-menu-image-close"
-                                    src={ close }></img> }
+                            <CloseIcon onClick={ () => { setOpen(!open) } } className="header-menu-image-icon-close" sx={ { fontSize: "7vw" } } ></CloseIcon>
                             <FormControlLabel
                                 style={ {
                                     display: "flex",
@@ -143,7 +129,7 @@ function Header({
                                 } }
                                 control={ <MaterialUISwitch sx={ { m: 1 } }
                                     onChange={ handleChange }
-                                    checked={ darkMode } /> }
+                                    checked={ isDarkMode } /> }
                             />
                         </div>
 

@@ -1,9 +1,9 @@
 import "../footer/footer.css";
-import contact_tel from "../../images/contact_tel.svg";
-import contact_mail from "../../images/contact_mail.svg";
-import contact_line from "../../images/contact_line.svg";
-import contact_linkIn from "../../images/contact_linkin.svg";
-import logo_download from "../../images/logo_download.svg";
+import contact_tel from "../../images/contact/contact_tel.svg";
+import contact_mail from "../../images/contact/contact_mail.svg";
+import contact_line from "../../images/contact/contact_line.svg";
+import contact_linkIn from "../../images/contact/contact_linkin.svg";
+import logo_download from "../../images/project/logo_download.svg";
 
 function Footer({ contactRef }) {
   const handleDownloadFile = async () => {

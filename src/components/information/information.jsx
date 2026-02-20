@@ -1,15 +1,15 @@
 import "../information/information.css";
 import "../middle.css";
-import profile_image from "../../images/profile_image.svg";
-import contact_tel from "../../images/contact_tel.svg";
-import contact_mail from "../../images/contact_mail.svg";
-import contact_line from "../../images/contact_line.svg";
-import contact_linkIn from "../../images/contact_linkin.svg";
+import profile_image from "../../images/profile/profile_image.svg";
+import contact_tel from "../../images/contact/contact_tel.svg";
+import contact_mail from "../../images/contact/contact_mail.svg";
+import contact_line from "../../images/contact/contact_line.svg";
+import contact_linkIn from "../../images/contact/contact_linkin.svg";
 
-import contact_tel_light_mode from "../../images/contact_tel_light_mode.svg";
-import contact_mail_light_mode from "../../images/contact_mail_light_mode.svg";
-import contact_line_light_mode from "../../images/contact_line_light_mode.svg";
-import contact_linkIn_light_mode from "../../images/contact_linkin_light_mode.svg";
+import contact_tel_light_mode from "../../images/contact/contact_tel_light_mode.svg";
+import contact_mail_light_mode from "../../images/contact/contact_mail_light_mode.svg";
+import contact_line_light_mode from "../../images/contact/contact_line_light_mode.svg";
+import contact_linkIn_light_mode from "../../images/contact/contact_linkin_light_mode.svg";
 
 function Information({ informationRef, isDarkMode }) {
   const nickName = "<CHOPPER>";
