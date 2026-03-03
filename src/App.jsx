@@ -7,6 +7,7 @@ import Experience from "./components/experiences/experience.jsx";
 import MyProject from "./components/my-project/my-project.jsx";
 import { useRef, useState } from "react";
 import Footer from "./components/footer/footer.jsx";
+import { Helmet } from "react-helmet-async";
 
 function App() {
   const skillRef = useRef(null);
@@ -22,6 +23,13 @@ function App() {
 
   return (
     <div className={isDarkMode ? "App-dark-mode" : "App"}>
+      <Helmet>
+        <title>Phrompong Khagtes | Full Stack Developer</title>
+        <meta name="description" content="Portfolio of Phrompong Khagtes, a Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management." />
+        <meta property="og:title" content="Phrompong Khagtes | Full Stack Developer" />
+        <meta property="og:description" content="Portfolio of Phrompong Khagtes, a Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management." />
+        <meta property="og:image" content="/profile_image.svg" />
+      </Helmet>
       <Header
         informationRef={informationRef}
         skillRef={skillRef}
@@ -29,18 +37,18 @@ function App() {
         contactRef={contactRef}
         handleDarkMode={handleDarkMode}
         isDarkMode={isDarkMode}
-      ></Header>
+      />
       <Information
         informationRef={informationRef}
         isDarkMode={isDarkMode}
-      ></Information>
-      <Company isDarkMode={isDarkMode}></Company>
-      <Skill skillRef={skillRef} isDarkMode={isDarkMode}></Skill>
+      />
+      <Company isDarkMode={isDarkMode} />
+      <Skill skillRef={skillRef} isDarkMode={isDarkMode} />
       <Experience
         experienceRef={experienceRef}
         isDarkMode={isDarkMode}
-      ></Experience>
-      <Footer contactRef={contactRef}></Footer>
+      />
+      <Footer contactRef={contactRef} />
     </div>
   );
 }
