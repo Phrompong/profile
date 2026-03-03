@@ -26,7 +26,7 @@ function App() {
       <Helmet>
         <title>Phrompong Khagtes | Full Stack Developer</title>
         <meta name="description" content="Portfolio of Phrompong Khagtes, a Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management." />
-        <meta property="og:title" content="Phrompong Khagtes | Full Stack Developer" />
+        <meta property="og:title" content="Phrompong Khagtes | Full Stack Developer app jsx" />
         <meta property="og:description" content="Portfolio of Phrompong Khagtes, a Full Stack Developer with over 7 years of experience in software development, system architecture design, and database management." />
         <meta property="og:image" content="/profile_image.svg" />
       </Helmet>
